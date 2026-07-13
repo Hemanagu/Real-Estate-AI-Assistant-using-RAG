@@ -1,0 +1,2273 @@
+2026-07-13 18:24:51,529 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:18,677 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:18,727 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:31,275 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:31,327 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:31,400 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:41,322 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:41,870 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:41,974 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:45,612 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:45,612 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 18:25:45,612 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 18:25:53,948 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:53,961 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:54,181 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:54,181 - WARNING - huggingface_hub.utils._http - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-13 18:25:54,196 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:54,205 - INFO - sentence_transformers.base.model - Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-07-13 18:25:54,429 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:54,429 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:54,678 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:54,679 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-07-13 18:25:54,917 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:54,931 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:55,169 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:55,183 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:55,413 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-07-13 18:25:55,629 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:55,661 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:56,181 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-07-13 18:25:56,413 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-13 18:25:56,645 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-13 18:25:56,877 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-13 18:25:57,506 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:57,525 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:57,755 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:57,765 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:58,013 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:58,031 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:58,263 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:58,267 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:58,506 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-13 18:25:58,744 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-13 18:25:59,193 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-13 18:25:59,206 - INFO - httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-07-13 18:25:59,429 - INFO - httpx - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-07-13 18:25:59,441 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 18:25:59,504 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' not found. It will be created during ingestion.
+2026-07-13 18:25:59,504 - INFO - RealEstateRAG - Initializing Google Gemini 2.5 Flash model...
+2026-07-13 18:25:59,506 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 18:25:59,506 - ERROR - RealEstateRAG - GEMINI_API_KEY is not set in environment or .env file.
+2026-07-13 18:25:59,508 - ERROR - RealEstateRAG - Error initializing Google Gemini LLM: GEMINI_API_KEY is missing. Please set it in your environment or .env file.
+2026-07-13 18:25:59,508 - ERROR - RealEstateRAG - Failed to initialize RAG pipeline: GEMINI_API_KEY is missing. Please set it in your environment or .env file.
+Traceback (most recent call last):
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\app.py", line 47, in load_rag_pipeline
+    llm = get_llm()
+          ^^^^^^^^^
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\llm.py", line 23, in get_llm
+    raise e
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\llm.py", line 8, in get_llm
+    api_key = get_gemini_api_key()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\utils\helpers.py", line 39, in get_gemini_api_key
+    raise ValueError("GEMINI_API_KEY is missing. Please set it in your environment or .env file.")
+ValueError: GEMINI_API_KEY is missing. Please set it in your environment or .env file.
+2026-07-13 20:46:14,388 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:46:14,389 - INFO - RealEstateRAG - === Starting Data Ingestion ===
+2026-07-13 20:46:14,389 - INFO - RealEstateRAG - Scanning directory: C:\Users\nagu\Desktop\real_estate_rag_assistant\data
+2026-07-13 20:46:14,389 - INFO - RealEstateRAG - Loading file: README.md
+2026-07-13 20:46:14,395 - INFO - RealEstateRAG - Loading file: docx\hbp_possession_guidelines.docx
+2026-07-13 20:46:14,402 - INFO - RealEstateRAG - Loading file: docx\hbp_registration_process.docx
+2026-07-13 20:46:14,405 - INFO - RealEstateRAG - Loading file: docx\hbp_sale_agreement_terms.docx
+2026-07-13 20:46:14,407 - INFO - RealEstateRAG - Loading file: docx\meridian_cancellation_refund_policy.docx
+2026-07-13 20:46:14,411 - INFO - RealEstateRAG - Loading file: docx\mgr_possession_guidelines.docx
+2026-07-13 20:46:14,414 - INFO - RealEstateRAG - Loading file: docx\mgr_registration_process.docx
+2026-07-13 20:46:14,421 - INFO - RealEstateRAG - Loading file: docx\mgr_sale_agreement_terms.docx
+2026-07-13 20:46:14,424 - INFO - RealEstateRAG - Loading file: docx\mlv_possession_guidelines.docx
+2026-07-13 20:46:14,428 - INFO - RealEstateRAG - Loading file: docx\mlv_registration_process.docx
+2026-07-13 20:46:14,432 - INFO - RealEstateRAG - Loading file: docx\mlv_sale_agreement_terms.docx
+2026-07-13 20:46:14,435 - INFO - RealEstateRAG - Loading file: docx\sht_possession_guidelines.docx
+2026-07-13 20:46:14,438 - INFO - RealEstateRAG - Loading file: docx\sht_registration_process.docx
+2026-07-13 20:46:14,443 - INFO - RealEstateRAG - Loading file: docx\sht_sale_agreement_terms.docx
+2026-07-13 20:46:14,446 - INFO - RealEstateRAG - Loading file: docx\skyline_cancellation_refund_policy.docx
+2026-07-13 20:46:14,450 - INFO - RealEstateRAG - Loading file: docx\unh_possession_guidelines.docx
+2026-07-13 20:46:14,453 - INFO - RealEstateRAG - Loading file: docx\unh_registration_process.docx
+2026-07-13 20:46:14,457 - INFO - RealEstateRAG - Loading file: docx\unh_sale_agreement_terms.docx
+2026-07-13 20:46:14,463 - INFO - RealEstateRAG - Loading file: docx\unr_possession_guidelines.docx
+2026-07-13 20:46:14,466 - INFO - RealEstateRAG - Loading file: docx\unr_registration_process.docx
+2026-07-13 20:46:14,469 - INFO - RealEstateRAG - Loading file: docx\unr_sale_agreement_terms.docx
+2026-07-13 20:46:14,473 - INFO - RealEstateRAG - Loading file: docx\urbannest_cancellation_refund_policy.docx
+2026-07-13 20:46:14,479 - INFO - RealEstateRAG - Loading file: html\meridian_about.html
+2026-07-13 20:46:14,483 - INFO - RealEstateRAG - Loading file: html\meridian_faq.html
+2026-07-13 20:46:14,487 - INFO - RealEstateRAG - Loading file: html\meridian_home.html
+2026-07-13 20:46:14,489 - INFO - RealEstateRAG - Loading file: html\meridian_privacy_policy.html
+2026-07-13 20:46:14,493 - INFO - RealEstateRAG - Loading file: html\meridian_terms_conditions.html
+2026-07-13 20:46:14,497 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_hbp.html
+2026-07-13 20:46:14,503 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_mgr.html
+2026-07-13 20:46:14,506 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_mlv.html
+2026-07-13 20:46:14,511 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_sht.html
+2026-07-13 20:46:14,514 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_unh.html
+2026-07-13 20:46:14,524 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_unr.html
+2026-07-13 20:46:14,532 - INFO - RealEstateRAG - Loading file: html\propertybazaar_privacy_policy.html
+2026-07-13 20:46:14,536 - INFO - RealEstateRAG - Loading file: html\propertybazaar_terms_of_use.html
+2026-07-13 20:46:14,540 - INFO - RealEstateRAG - Loading file: html\skyline_about.html
+2026-07-13 20:46:14,548 - INFO - RealEstateRAG - Loading file: html\skyline_faq.html
+2026-07-13 20:46:14,553 - INFO - RealEstateRAG - Loading file: html\skyline_home.html
+2026-07-13 20:46:14,571 - INFO - RealEstateRAG - Loading file: html\skyline_privacy_policy.html
+2026-07-13 20:46:14,578 - INFO - RealEstateRAG - Loading file: html\skyline_terms_conditions.html
+2026-07-13 20:46:14,585 - INFO - RealEstateRAG - Loading file: html\urbannest_about.html
+2026-07-13 20:46:14,589 - INFO - RealEstateRAG - Loading file: html\urbannest_faq.html
+2026-07-13 20:46:14,593 - INFO - RealEstateRAG - Loading file: html\urbannest_home.html
+2026-07-13 20:46:14,597 - INFO - RealEstateRAG - Loading file: html\urbannest_privacy_policy.html
+2026-07-13 20:46:14,599 - INFO - RealEstateRAG - Loading file: html\urbannest_terms_conditions.html
+2026-07-13 20:46:14,603 - INFO - RealEstateRAG - Loading file: markdown\hbp_amenities_guide.md
+2026-07-13 20:46:14,605 - INFO - RealEstateRAG - Loading file: markdown\hbp_floor_plans.md
+2026-07-13 20:46:14,642 - INFO - RealEstateRAG - Loading file: markdown\hbp_home_loan_partners.md
+2026-07-13 20:46:14,644 - INFO - RealEstateRAG - Loading file: markdown\hbp_location_guide.md
+2026-07-13 20:46:14,646 - INFO - RealEstateRAG - Loading file: markdown\home_loan_general_guide.md
+2026-07-13 20:46:14,648 - INFO - RealEstateRAG - Loading file: markdown\meridian_customer_support.md
+2026-07-13 20:46:14,650 - INFO - RealEstateRAG - Loading file: markdown\mgr_amenities_guide.md
+2026-07-13 20:46:14,650 - INFO - RealEstateRAG - Loading file: markdown\mgr_floor_plans.md
+2026-07-13 20:46:14,652 - INFO - RealEstateRAG - Loading file: markdown\mgr_home_loan_partners.md
+2026-07-13 20:46:14,655 - INFO - RealEstateRAG - Loading file: markdown\mgr_location_guide.md
+2026-07-13 20:46:14,657 - INFO - RealEstateRAG - Loading file: markdown\mlv_amenities_guide.md
+2026-07-13 20:46:14,661 - INFO - RealEstateRAG - Loading file: markdown\mlv_floor_plans.md
+2026-07-13 20:46:14,663 - INFO - RealEstateRAG - Loading file: markdown\mlv_home_loan_partners.md
+2026-07-13 20:46:14,663 - INFO - RealEstateRAG - Loading file: markdown\mlv_location_guide.md
+2026-07-13 20:46:14,665 - INFO - RealEstateRAG - Loading file: markdown\rera_general_information.md
+2026-07-13 20:46:14,667 - INFO - RealEstateRAG - Loading file: markdown\sht_amenities_guide.md
+2026-07-13 20:46:14,669 - INFO - RealEstateRAG - Loading file: markdown\sht_floor_plans.md
+2026-07-13 20:46:14,671 - INFO - RealEstateRAG - Loading file: markdown\sht_home_loan_partners.md
+2026-07-13 20:46:14,673 - INFO - RealEstateRAG - Loading file: markdown\sht_location_guide.md
+2026-07-13 20:46:14,677 - INFO - RealEstateRAG - Loading file: markdown\skyline_customer_support.md
+2026-07-13 20:46:14,681 - INFO - RealEstateRAG - Loading file: markdown\unh_amenities_guide.md
+2026-07-13 20:46:14,683 - INFO - RealEstateRAG - Loading file: markdown\unh_floor_plans.md
+2026-07-13 20:46:14,689 - INFO - RealEstateRAG - Loading file: markdown\unh_location_guide.md
+2026-07-13 20:46:14,692 - INFO - RealEstateRAG - Loading file: markdown\unr_amenities_guide.md
+2026-07-13 20:46:14,702 - INFO - RealEstateRAG - Loading file: markdown\unr_floor_plans.md
+2026-07-13 20:46:14,707 - INFO - RealEstateRAG - Loading file: markdown\unr_location_guide.md
+2026-07-13 20:46:14,712 - INFO - RealEstateRAG - Loading file: markdown\urbannest_customer_support.md
+2026-07-13 20:46:14,714 - INFO - RealEstateRAG - Loading file: pdf\hbp_brochure.pdf
+2026-07-13 20:46:15,435 - INFO - RealEstateRAG - Loading file: pdf\hbp_payment_plan.pdf
+2026-07-13 20:46:15,456 - INFO - RealEstateRAG - Loading file: pdf\hbp_rera_summary.pdf
+2026-07-13 20:46:15,471 - INFO - RealEstateRAG - Loading file: pdf\meridian_builder_profile.pdf
+2026-07-13 20:46:15,489 - INFO - RealEstateRAG - Loading file: pdf\mgr_brochure.pdf
+2026-07-13 20:46:15,513 - INFO - RealEstateRAG - Loading file: pdf\mgr_payment_plan.pdf
+2026-07-13 20:46:15,545 - INFO - RealEstateRAG - Loading file: pdf\mgr_rera_summary.pdf
+2026-07-13 20:46:15,563 - INFO - RealEstateRAG - Loading file: pdf\mlv_brochure.pdf
+2026-07-13 20:46:15,588 - INFO - RealEstateRAG - Loading file: pdf\mlv_payment_plan.pdf
+2026-07-13 20:46:15,612 - INFO - RealEstateRAG - Loading file: pdf\mlv_rera_summary.pdf
+2026-07-13 20:46:15,635 - INFO - RealEstateRAG - Loading file: pdf\sht_brochure.pdf
+2026-07-13 20:46:15,655 - INFO - RealEstateRAG - Loading file: pdf\sht_payment_plan.pdf
+2026-07-13 20:46:15,678 - INFO - RealEstateRAG - Loading file: pdf\sht_rera_summary.pdf
+2026-07-13 20:46:15,695 - INFO - RealEstateRAG - Loading file: pdf\skyline_builder_profile.pdf
+2026-07-13 20:46:15,707 - INFO - RealEstateRAG - Loading file: pdf\unh_brochure.pdf
+2026-07-13 20:46:15,751 - INFO - RealEstateRAG - Loading file: pdf\unh_payment_plan.pdf
+2026-07-13 20:46:15,778 - INFO - RealEstateRAG - Loading file: pdf\unh_rera_summary.pdf
+2026-07-13 20:46:15,792 - INFO - RealEstateRAG - Loading file: pdf\unr_brochure.pdf
+2026-07-13 20:46:15,813 - INFO - RealEstateRAG - Loading file: pdf\unr_payment_plan.pdf
+2026-07-13 20:46:15,830 - INFO - RealEstateRAG - Loading file: pdf\unr_rera_summary.pdf
+2026-07-13 20:46:15,848 - INFO - RealEstateRAG - Loading file: pdf\urbannest_builder_profile.pdf
+2026-07-13 20:46:15,866 - INFO - RealEstateRAG - Loaded a total of 93 document pages/sections.
+2026-07-13 20:46:15,866 - INFO - RealEstateRAG - Splitting 93 documents with chunk_size=1000, overlap=200
+2026-07-13 20:46:15,876 - INFO - RealEstateRAG - Generated 156 text chunks.
+2026-07-13 20:46:15,880 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:46:15,882 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 20:46:43,297 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 20:46:43,396 - ERROR - RealEstateRAG - Error initializing HuggingFaceEmbeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+2026-07-13 20:46:43,397 - ERROR - RealEstateRAG - Error indexing chunks in vector store: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+Traceback (most recent call last):
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\embeddings\huggingface.py", line 84, in __init__
+    import sentence_transformers
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\sentence_transformers\__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\sentence_transformers\backend\__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\sentence_transformers\backend\load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\utils\__init__.py", line 47, in <module>
+    from .generic import (
+ImportError: cannot import name 'LossKwargs' from 'transformers.utils.generic' (C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\utils\generic.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\ingest.py", line 53, in main
+    manager = QdrantVectorStoreManager()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\vector_store.py", line 15, in __init__
+    self.embeddings = get_embeddings_model()
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\embeddings.py", line 31, in get_embeddings_model
+    raise e
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\embeddings.py", line 15, in get_embeddings_model
+    embeddings = HuggingFaceEmbeddings(
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\_api\deprecation.py", line 274, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\embeddings\huggingface.py", line 87, in __init__
+    raise ImportError(
+ImportError: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+2026-07-13 20:50:16,081 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:50:34,971 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:50:35,086 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:50:44,713 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:50:44,836 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:50:44,948 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:51:09,124 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:51:09,124 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 20:51:09,124 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 20:51:20,873 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 20:51:27,719 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 20:51:27,747 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' not found. It will be created during ingestion.
+2026-07-13 20:51:27,747 - INFO - RealEstateRAG - Initializing Google Gemini 2.5 Flash model...
+2026-07-13 20:51:27,747 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:51:27,759 - ERROR - RealEstateRAG - GEMINI_API_KEY is not set in environment or .env file.
+2026-07-13 20:51:27,759 - ERROR - RealEstateRAG - Error initializing Google Gemini LLM: GEMINI_API_KEY is missing. Please set it in your environment or .env file.
+2026-07-13 20:51:27,760 - ERROR - RealEstateRAG - Failed to initialize RAG pipeline: GEMINI_API_KEY is missing. Please set it in your environment or .env file.
+Traceback (most recent call last):
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\app.py", line 47, in load_rag_pipeline
+    llm = get_llm()
+          ^^^^^^^^^
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\llm.py", line 23, in get_llm
+    raise e
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\llm.py", line 8, in get_llm
+    api_key = get_gemini_api_key()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\utils\helpers.py", line 39, in get_gemini_api_key
+    raise ValueError("GEMINI_API_KEY is missing. Please set it in your environment or .env file.")
+ValueError: GEMINI_API_KEY is missing. Please set it in your environment or .env file.
+2026-07-13 20:54:28,501 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:54:47,045 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:54:47,130 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:54:47,425 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:56:15,916 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:56:25,858 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:56:25,895 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:56:26,235 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:56:51,711 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:56:58,956 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:56:58,984 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:56:59,086 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:57:10,458 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:57:10,458 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 20:57:10,458 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 20:57:17,837 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 20:57:25,486 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 20:57:25,526 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' not found. It will be created during ingestion.
+2026-07-13 20:57:25,526 - INFO - RealEstateRAG - Initializing Google Gemini 2.5 Flash model...
+2026-07-13 20:57:25,526 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:57:25,604 - INFO - RealEstateRAG - Google Gemini 2.5 Flash model initialized successfully.
+2026-07-13 20:59:11,411 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:59:11,413 - INFO - RealEstateRAG - === Starting Data Ingestion ===
+2026-07-13 20:59:11,413 - INFO - RealEstateRAG - Scanning directory: C:\Users\nagu\Desktop\real_estate_rag_assistant\data
+2026-07-13 20:59:11,414 - INFO - RealEstateRAG - Loading file: README.md
+2026-07-13 20:59:11,417 - INFO - RealEstateRAG - Loading file: docx\hbp_possession_guidelines.docx
+2026-07-13 20:59:11,424 - INFO - RealEstateRAG - Loading file: docx\hbp_registration_process.docx
+2026-07-13 20:59:11,427 - INFO - RealEstateRAG - Loading file: docx\hbp_sale_agreement_terms.docx
+2026-07-13 20:59:11,430 - INFO - RealEstateRAG - Loading file: docx\meridian_cancellation_refund_policy.docx
+2026-07-13 20:59:11,434 - INFO - RealEstateRAG - Loading file: docx\mgr_possession_guidelines.docx
+2026-07-13 20:59:11,437 - INFO - RealEstateRAG - Loading file: docx\mgr_registration_process.docx
+2026-07-13 20:59:11,440 - INFO - RealEstateRAG - Loading file: docx\mgr_sale_agreement_terms.docx
+2026-07-13 20:59:11,444 - INFO - RealEstateRAG - Loading file: docx\mlv_possession_guidelines.docx
+2026-07-13 20:59:11,449 - INFO - RealEstateRAG - Loading file: docx\mlv_registration_process.docx
+2026-07-13 20:59:11,454 - INFO - RealEstateRAG - Loading file: docx\mlv_sale_agreement_terms.docx
+2026-07-13 20:59:11,457 - INFO - RealEstateRAG - Loading file: docx\sht_possession_guidelines.docx
+2026-07-13 20:59:11,460 - INFO - RealEstateRAG - Loading file: docx\sht_registration_process.docx
+2026-07-13 20:59:11,463 - INFO - RealEstateRAG - Loading file: docx\sht_sale_agreement_terms.docx
+2026-07-13 20:59:11,465 - INFO - RealEstateRAG - Loading file: docx\skyline_cancellation_refund_policy.docx
+2026-07-13 20:59:11,469 - INFO - RealEstateRAG - Loading file: docx\unh_possession_guidelines.docx
+2026-07-13 20:59:11,472 - INFO - RealEstateRAG - Loading file: docx\unh_registration_process.docx
+2026-07-13 20:59:11,475 - INFO - RealEstateRAG - Loading file: docx\unh_sale_agreement_terms.docx
+2026-07-13 20:59:11,480 - INFO - RealEstateRAG - Loading file: docx\unr_possession_guidelines.docx
+2026-07-13 20:59:11,482 - INFO - RealEstateRAG - Loading file: docx\unr_registration_process.docx
+2026-07-13 20:59:11,486 - INFO - RealEstateRAG - Loading file: docx\unr_sale_agreement_terms.docx
+2026-07-13 20:59:11,489 - INFO - RealEstateRAG - Loading file: docx\urbannest_cancellation_refund_policy.docx
+2026-07-13 20:59:11,495 - INFO - RealEstateRAG - Loading file: html\meridian_about.html
+2026-07-13 20:59:11,497 - INFO - RealEstateRAG - Loading file: html\meridian_faq.html
+2026-07-13 20:59:11,500 - INFO - RealEstateRAG - Loading file: html\meridian_home.html
+2026-07-13 20:59:11,503 - INFO - RealEstateRAG - Loading file: html\meridian_privacy_policy.html
+2026-07-13 20:59:11,506 - INFO - RealEstateRAG - Loading file: html\meridian_terms_conditions.html
+2026-07-13 20:59:11,509 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_hbp.html
+2026-07-13 20:59:11,512 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_mgr.html
+2026-07-13 20:59:11,517 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_mlv.html
+2026-07-13 20:59:11,519 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_sht.html
+2026-07-13 20:59:11,521 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_unh.html
+2026-07-13 20:59:11,525 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_unr.html
+2026-07-13 20:59:11,528 - INFO - RealEstateRAG - Loading file: html\propertybazaar_privacy_policy.html
+2026-07-13 20:59:11,530 - INFO - RealEstateRAG - Loading file: html\propertybazaar_terms_of_use.html
+2026-07-13 20:59:11,532 - INFO - RealEstateRAG - Loading file: html\skyline_about.html
+2026-07-13 20:59:11,538 - INFO - RealEstateRAG - Loading file: html\skyline_faq.html
+2026-07-13 20:59:11,540 - INFO - RealEstateRAG - Loading file: html\skyline_home.html
+2026-07-13 20:59:11,542 - INFO - RealEstateRAG - Loading file: html\skyline_privacy_policy.html
+2026-07-13 20:59:11,545 - INFO - RealEstateRAG - Loading file: html\skyline_terms_conditions.html
+2026-07-13 20:59:11,548 - INFO - RealEstateRAG - Loading file: html\urbannest_about.html
+2026-07-13 20:59:11,551 - INFO - RealEstateRAG - Loading file: html\urbannest_faq.html
+2026-07-13 20:59:11,554 - INFO - RealEstateRAG - Loading file: html\urbannest_home.html
+2026-07-13 20:59:11,557 - INFO - RealEstateRAG - Loading file: html\urbannest_privacy_policy.html
+2026-07-13 20:59:11,561 - INFO - RealEstateRAG - Loading file: html\urbannest_terms_conditions.html
+2026-07-13 20:59:11,565 - INFO - RealEstateRAG - Loading file: markdown\hbp_amenities_guide.md
+2026-07-13 20:59:11,566 - INFO - RealEstateRAG - Loading file: markdown\hbp_floor_plans.md
+2026-07-13 20:59:11,569 - INFO - RealEstateRAG - Loading file: markdown\hbp_home_loan_partners.md
+2026-07-13 20:59:11,571 - INFO - RealEstateRAG - Loading file: markdown\hbp_location_guide.md
+2026-07-13 20:59:11,573 - INFO - RealEstateRAG - Loading file: markdown\home_loan_general_guide.md
+2026-07-13 20:59:11,575 - INFO - RealEstateRAG - Loading file: markdown\meridian_customer_support.md
+2026-07-13 20:59:11,576 - INFO - RealEstateRAG - Loading file: markdown\mgr_amenities_guide.md
+2026-07-13 20:59:11,578 - INFO - RealEstateRAG - Loading file: markdown\mgr_floor_plans.md
+2026-07-13 20:59:11,579 - INFO - RealEstateRAG - Loading file: markdown\mgr_home_loan_partners.md
+2026-07-13 20:59:11,582 - INFO - RealEstateRAG - Loading file: markdown\mgr_location_guide.md
+2026-07-13 20:59:11,583 - INFO - RealEstateRAG - Loading file: markdown\mlv_amenities_guide.md
+2026-07-13 20:59:11,587 - INFO - RealEstateRAG - Loading file: markdown\mlv_floor_plans.md
+2026-07-13 20:59:11,588 - INFO - RealEstateRAG - Loading file: markdown\mlv_home_loan_partners.md
+2026-07-13 20:59:11,591 - INFO - RealEstateRAG - Loading file: markdown\mlv_location_guide.md
+2026-07-13 20:59:11,592 - INFO - RealEstateRAG - Loading file: markdown\rera_general_information.md
+2026-07-13 20:59:11,594 - INFO - RealEstateRAG - Loading file: markdown\sht_amenities_guide.md
+2026-07-13 20:59:11,595 - INFO - RealEstateRAG - Loading file: markdown\sht_floor_plans.md
+2026-07-13 20:59:11,598 - INFO - RealEstateRAG - Loading file: markdown\sht_home_loan_partners.md
+2026-07-13 20:59:11,599 - INFO - RealEstateRAG - Loading file: markdown\sht_location_guide.md
+2026-07-13 20:59:11,600 - INFO - RealEstateRAG - Loading file: markdown\skyline_customer_support.md
+2026-07-13 20:59:11,603 - INFO - RealEstateRAG - Loading file: markdown\unh_amenities_guide.md
+2026-07-13 20:59:11,604 - INFO - RealEstateRAG - Loading file: markdown\unh_floor_plans.md
+2026-07-13 20:59:11,606 - INFO - RealEstateRAG - Loading file: markdown\unh_location_guide.md
+2026-07-13 20:59:11,608 - INFO - RealEstateRAG - Loading file: markdown\unr_amenities_guide.md
+2026-07-13 20:59:11,609 - INFO - RealEstateRAG - Loading file: markdown\unr_floor_plans.md
+2026-07-13 20:59:11,613 - INFO - RealEstateRAG - Loading file: markdown\unr_location_guide.md
+2026-07-13 20:59:11,614 - INFO - RealEstateRAG - Loading file: markdown\urbannest_customer_support.md
+2026-07-13 20:59:11,616 - INFO - RealEstateRAG - Loading file: pdf\hbp_brochure.pdf
+2026-07-13 20:59:12,016 - INFO - RealEstateRAG - Loading file: pdf\hbp_payment_plan.pdf
+2026-07-13 20:59:12,031 - INFO - RealEstateRAG - Loading file: pdf\hbp_rera_summary.pdf
+2026-07-13 20:59:12,044 - INFO - RealEstateRAG - Loading file: pdf\meridian_builder_profile.pdf
+2026-07-13 20:59:12,058 - INFO - RealEstateRAG - Loading file: pdf\mgr_brochure.pdf
+2026-07-13 20:59:12,079 - INFO - RealEstateRAG - Loading file: pdf\mgr_payment_plan.pdf
+2026-07-13 20:59:12,114 - INFO - RealEstateRAG - Loading file: pdf\mgr_rera_summary.pdf
+2026-07-13 20:59:12,178 - INFO - RealEstateRAG - Loading file: pdf\mlv_brochure.pdf
+2026-07-13 20:59:12,224 - INFO - RealEstateRAG - Loading file: pdf\mlv_payment_plan.pdf
+2026-07-13 20:59:12,254 - INFO - RealEstateRAG - Loading file: pdf\mlv_rera_summary.pdf
+2026-07-13 20:59:12,287 - INFO - RealEstateRAG - Loading file: pdf\sht_brochure.pdf
+2026-07-13 20:59:12,301 - INFO - RealEstateRAG - Loading file: pdf\sht_payment_plan.pdf
+2026-07-13 20:59:12,313 - INFO - RealEstateRAG - Loading file: pdf\sht_rera_summary.pdf
+2026-07-13 20:59:12,326 - INFO - RealEstateRAG - Loading file: pdf\skyline_builder_profile.pdf
+2026-07-13 20:59:12,338 - INFO - RealEstateRAG - Loading file: pdf\unh_brochure.pdf
+2026-07-13 20:59:12,352 - INFO - RealEstateRAG - Loading file: pdf\unh_payment_plan.pdf
+2026-07-13 20:59:12,370 - INFO - RealEstateRAG - Loading file: pdf\unh_rera_summary.pdf
+2026-07-13 20:59:12,382 - INFO - RealEstateRAG - Loading file: pdf\unr_brochure.pdf
+2026-07-13 20:59:12,397 - INFO - RealEstateRAG - Loading file: pdf\unr_payment_plan.pdf
+2026-07-13 20:59:12,412 - INFO - RealEstateRAG - Loading file: pdf\unr_rera_summary.pdf
+2026-07-13 20:59:12,427 - INFO - RealEstateRAG - Loading file: pdf\urbannest_builder_profile.pdf
+2026-07-13 20:59:12,441 - INFO - RealEstateRAG - Loaded a total of 93 document pages/sections.
+2026-07-13 20:59:12,442 - INFO - RealEstateRAG - Splitting 93 documents with chunk_size=1000, overlap=200
+2026-07-13 20:59:12,449 - INFO - RealEstateRAG - Generated 156 text chunks.
+2026-07-13 20:59:12,453 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 20:59:12,454 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 20:59:12,454 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 20:59:20,376 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 20:59:26,198 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 20:59:26,479 - ERROR - RealEstateRAG - Error indexing chunks in vector store: Storage folder ./qdrant_storage is already accessed by another instance of Qdrant client. If you require concurrent access, use Qdrant server instead.
+Traceback (most recent call last):
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\portalocker\portalocker.py", line 223, in lock
+    msvcrt.locking(  # type: ignore[attr-defined]
+PermissionError: [Errno 13] Permission denied
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\qdrant_client\local\qdrant_local.py", line 133, in _load
+    portalocker.lock(
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\portalocker\portalocker.py", line 316, in lock
+    locker(file, flags)
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\portalocker\portalocker.py", line 230, in lock
+    raise exceptions.AlreadyLocked(
+portalocker.exceptions.AlreadyLocked: (1, '[Errno 13] Permission denied')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\ingest.py", line 53, in main
+    manager = QdrantVectorStoreManager()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\vector_store.py", line 18, in __init__
+    self._init_client()
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\vector_store.py", line 28, in _init_client
+    self.client = QdrantClient(path=self.qdrant_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\qdrant_client\qdrant_client.py", line 132, in __init__
+    self._client = QdrantLocal(
+                   ^^^^^^^^^^^^
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\qdrant_client\local\qdrant_local.py", line 66, in __init__
+    self._load()
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\qdrant_client\local\qdrant_local.py", line 138, in _load
+    raise RuntimeError(
+RuntimeError: Storage folder ./qdrant_storage is already accessed by another instance of Qdrant client. If you require concurrent access, use Qdrant server instead.
+2026-07-13 21:01:43,766 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:01:43,766 - INFO - RealEstateRAG - === Starting Data Ingestion ===
+2026-07-13 21:01:43,766 - INFO - RealEstateRAG - Scanning directory: C:\Users\nagu\Desktop\real_estate_rag_assistant\data
+2026-07-13 21:01:43,766 - INFO - RealEstateRAG - Loading file: README.md
+2026-07-13 21:01:43,773 - INFO - RealEstateRAG - Loading file: docx\hbp_possession_guidelines.docx
+2026-07-13 21:01:43,780 - INFO - RealEstateRAG - Loading file: docx\hbp_registration_process.docx
+2026-07-13 21:01:43,782 - INFO - RealEstateRAG - Loading file: docx\hbp_sale_agreement_terms.docx
+2026-07-13 21:01:43,785 - INFO - RealEstateRAG - Loading file: docx\meridian_cancellation_refund_policy.docx
+2026-07-13 21:01:43,788 - INFO - RealEstateRAG - Loading file: docx\mgr_possession_guidelines.docx
+2026-07-13 21:01:43,791 - INFO - RealEstateRAG - Loading file: docx\mgr_registration_process.docx
+2026-07-13 21:01:43,793 - INFO - RealEstateRAG - Loading file: docx\mgr_sale_agreement_terms.docx
+2026-07-13 21:01:43,796 - INFO - RealEstateRAG - Loading file: docx\mlv_possession_guidelines.docx
+2026-07-13 21:01:43,805 - INFO - RealEstateRAG - Loading file: docx\mlv_registration_process.docx
+2026-07-13 21:01:43,809 - INFO - RealEstateRAG - Loading file: docx\mlv_sale_agreement_terms.docx
+2026-07-13 21:01:43,813 - INFO - RealEstateRAG - Loading file: docx\sht_possession_guidelines.docx
+2026-07-13 21:01:43,817 - INFO - RealEstateRAG - Loading file: docx\sht_registration_process.docx
+2026-07-13 21:01:43,820 - INFO - RealEstateRAG - Loading file: docx\sht_sale_agreement_terms.docx
+2026-07-13 21:01:43,824 - INFO - RealEstateRAG - Loading file: docx\skyline_cancellation_refund_policy.docx
+2026-07-13 21:01:43,830 - INFO - RealEstateRAG - Loading file: docx\unh_possession_guidelines.docx
+2026-07-13 21:01:43,831 - INFO - RealEstateRAG - Loading file: docx\unh_registration_process.docx
+2026-07-13 21:01:43,834 - INFO - RealEstateRAG - Loading file: docx\unh_sale_agreement_terms.docx
+2026-07-13 21:01:43,838 - INFO - RealEstateRAG - Loading file: docx\unr_possession_guidelines.docx
+2026-07-13 21:01:43,840 - INFO - RealEstateRAG - Loading file: docx\unr_registration_process.docx
+2026-07-13 21:01:43,844 - INFO - RealEstateRAG - Loading file: docx\unr_sale_agreement_terms.docx
+2026-07-13 21:01:43,846 - INFO - RealEstateRAG - Loading file: docx\urbannest_cancellation_refund_policy.docx
+2026-07-13 21:01:43,850 - INFO - RealEstateRAG - Loading file: html\meridian_about.html
+2026-07-13 21:01:43,855 - INFO - RealEstateRAG - Loading file: html\meridian_faq.html
+2026-07-13 21:01:43,858 - INFO - RealEstateRAG - Loading file: html\meridian_home.html
+2026-07-13 21:01:43,863 - INFO - RealEstateRAG - Loading file: html\meridian_privacy_policy.html
+2026-07-13 21:01:43,864 - INFO - RealEstateRAG - Loading file: html\meridian_terms_conditions.html
+2026-07-13 21:01:43,864 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_hbp.html
+2026-07-13 21:01:43,872 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_mgr.html
+2026-07-13 21:01:43,874 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_mlv.html
+2026-07-13 21:01:43,878 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_sht.html
+2026-07-13 21:01:43,879 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_unh.html
+2026-07-13 21:01:43,879 - INFO - RealEstateRAG - Loading file: html\propertybazaar_listing_unr.html
+2026-07-13 21:01:43,886 - INFO - RealEstateRAG - Loading file: html\propertybazaar_privacy_policy.html
+2026-07-13 21:01:43,890 - INFO - RealEstateRAG - Loading file: html\propertybazaar_terms_of_use.html
+2026-07-13 21:01:43,892 - INFO - RealEstateRAG - Loading file: html\skyline_about.html
+2026-07-13 21:01:43,895 - INFO - RealEstateRAG - Loading file: html\skyline_faq.html
+2026-07-13 21:01:43,897 - INFO - RealEstateRAG - Loading file: html\skyline_home.html
+2026-07-13 21:01:43,899 - INFO - RealEstateRAG - Loading file: html\skyline_privacy_policy.html
+2026-07-13 21:01:43,901 - INFO - RealEstateRAG - Loading file: html\skyline_terms_conditions.html
+2026-07-13 21:01:43,906 - INFO - RealEstateRAG - Loading file: html\urbannest_about.html
+2026-07-13 21:01:43,908 - INFO - RealEstateRAG - Loading file: html\urbannest_faq.html
+2026-07-13 21:01:43,910 - INFO - RealEstateRAG - Loading file: html\urbannest_home.html
+2026-07-13 21:01:43,912 - INFO - RealEstateRAG - Loading file: html\urbannest_privacy_policy.html
+2026-07-13 21:01:43,916 - INFO - RealEstateRAG - Loading file: html\urbannest_terms_conditions.html
+2026-07-13 21:01:43,921 - INFO - RealEstateRAG - Loading file: markdown\hbp_amenities_guide.md
+2026-07-13 21:01:43,921 - INFO - RealEstateRAG - Loading file: markdown\hbp_floor_plans.md
+2026-07-13 21:01:43,921 - INFO - RealEstateRAG - Loading file: markdown\hbp_home_loan_partners.md
+2026-07-13 21:01:43,921 - INFO - RealEstateRAG - Loading file: markdown\hbp_location_guide.md
+2026-07-13 21:01:43,921 - INFO - RealEstateRAG - Loading file: markdown\home_loan_general_guide.md
+2026-07-13 21:01:43,921 - INFO - RealEstateRAG - Loading file: markdown\meridian_customer_support.md
+2026-07-13 21:01:43,921 - INFO - RealEstateRAG - Loading file: markdown\mgr_amenities_guide.md
+2026-07-13 21:01:43,934 - INFO - RealEstateRAG - Loading file: markdown\mgr_floor_plans.md
+2026-07-13 21:01:43,937 - INFO - RealEstateRAG - Loading file: markdown\mgr_home_loan_partners.md
+2026-07-13 21:01:43,939 - INFO - RealEstateRAG - Loading file: markdown\mgr_location_guide.md
+2026-07-13 21:01:43,942 - INFO - RealEstateRAG - Loading file: markdown\mlv_amenities_guide.md
+2026-07-13 21:01:43,944 - INFO - RealEstateRAG - Loading file: markdown\mlv_floor_plans.md
+2026-07-13 21:01:43,948 - INFO - RealEstateRAG - Loading file: markdown\mlv_home_loan_partners.md
+2026-07-13 21:01:43,950 - INFO - RealEstateRAG - Loading file: markdown\mlv_location_guide.md
+2026-07-13 21:01:43,952 - INFO - RealEstateRAG - Loading file: markdown\rera_general_information.md
+2026-07-13 21:01:43,954 - INFO - RealEstateRAG - Loading file: markdown\sht_amenities_guide.md
+2026-07-13 21:01:43,958 - INFO - RealEstateRAG - Loading file: markdown\sht_floor_plans.md
+2026-07-13 21:01:43,960 - INFO - RealEstateRAG - Loading file: markdown\sht_home_loan_partners.md
+2026-07-13 21:01:43,960 - INFO - RealEstateRAG - Loading file: markdown\sht_location_guide.md
+2026-07-13 21:01:43,960 - INFO - RealEstateRAG - Loading file: markdown\skyline_customer_support.md
+2026-07-13 21:01:43,960 - INFO - RealEstateRAG - Loading file: markdown\unh_amenities_guide.md
+2026-07-13 21:01:43,966 - INFO - RealEstateRAG - Loading file: markdown\unh_floor_plans.md
+2026-07-13 21:01:43,969 - INFO - RealEstateRAG - Loading file: markdown\unh_location_guide.md
+2026-07-13 21:01:43,970 - INFO - RealEstateRAG - Loading file: markdown\unr_amenities_guide.md
+2026-07-13 21:01:43,972 - INFO - RealEstateRAG - Loading file: markdown\unr_floor_plans.md
+2026-07-13 21:01:43,975 - INFO - RealEstateRAG - Loading file: markdown\unr_location_guide.md
+2026-07-13 21:01:43,977 - INFO - RealEstateRAG - Loading file: markdown\urbannest_customer_support.md
+2026-07-13 21:01:43,979 - INFO - RealEstateRAG - Loading file: pdf\hbp_brochure.pdf
+2026-07-13 21:01:44,268 - INFO - RealEstateRAG - Loading file: pdf\hbp_payment_plan.pdf
+2026-07-13 21:01:44,268 - INFO - RealEstateRAG - Loading file: pdf\hbp_rera_summary.pdf
+2026-07-13 21:01:44,293 - INFO - RealEstateRAG - Loading file: pdf\meridian_builder_profile.pdf
+2026-07-13 21:01:44,304 - INFO - RealEstateRAG - Loading file: pdf\mgr_brochure.pdf
+2026-07-13 21:01:44,318 - INFO - RealEstateRAG - Loading file: pdf\mgr_payment_plan.pdf
+2026-07-13 21:01:44,328 - INFO - RealEstateRAG - Loading file: pdf\mgr_rera_summary.pdf
+2026-07-13 21:01:44,337 - INFO - RealEstateRAG - Loading file: pdf\mlv_brochure.pdf
+2026-07-13 21:01:44,351 - INFO - RealEstateRAG - Loading file: pdf\mlv_payment_plan.pdf
+2026-07-13 21:01:44,361 - INFO - RealEstateRAG - Loading file: pdf\mlv_rera_summary.pdf
+2026-07-13 21:01:44,372 - INFO - RealEstateRAG - Loading file: pdf\sht_brochure.pdf
+2026-07-13 21:01:44,390 - INFO - RealEstateRAG - Loading file: pdf\sht_payment_plan.pdf
+2026-07-13 21:01:44,403 - INFO - RealEstateRAG - Loading file: pdf\sht_rera_summary.pdf
+2026-07-13 21:01:44,415 - INFO - RealEstateRAG - Loading file: pdf\skyline_builder_profile.pdf
+2026-07-13 21:01:44,427 - INFO - RealEstateRAG - Loading file: pdf\unh_brochure.pdf
+2026-07-13 21:01:44,440 - INFO - RealEstateRAG - Loading file: pdf\unh_payment_plan.pdf
+2026-07-13 21:01:44,451 - INFO - RealEstateRAG - Loading file: pdf\unh_rera_summary.pdf
+2026-07-13 21:01:44,460 - INFO - RealEstateRAG - Loading file: pdf\unr_brochure.pdf
+2026-07-13 21:01:44,475 - INFO - RealEstateRAG - Loading file: pdf\unr_payment_plan.pdf
+2026-07-13 21:01:44,489 - INFO - RealEstateRAG - Loading file: pdf\unr_rera_summary.pdf
+2026-07-13 21:01:44,500 - INFO - RealEstateRAG - Loading file: pdf\urbannest_builder_profile.pdf
+2026-07-13 21:01:44,506 - INFO - RealEstateRAG - Loaded a total of 93 document pages/sections.
+2026-07-13 21:01:44,506 - INFO - RealEstateRAG - Splitting 93 documents with chunk_size=1000, overlap=200
+2026-07-13 21:01:44,506 - INFO - RealEstateRAG - Generated 156 text chunks.
+2026-07-13 21:01:44,517 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:01:44,518 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:01:44,518 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 21:01:51,294 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:02:07,703 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 21:02:07,960 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' not found. It will be created during ingestion.
+2026-07-13 21:02:07,960 - INFO - RealEstateRAG - Creating collection 'real_estate_knowledge' with size=384...
+2026-07-13 21:02:07,982 - INFO - RealEstateRAG - Indexing 156 chunks into collection 'real_estate_knowledge'...
+2026-07-13 21:02:26,225 - INFO - RealEstateRAG - Indexing completed successfully.
+2026-07-13 21:02:26,225 - INFO - RealEstateRAG - === Ingestion Completed Successfully ===
+2026-07-13 21:02:56,781 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:03:09,143 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:03:09,197 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:03:09,264 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:03:20,123 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:03:20,127 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:03:20,127 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 21:03:27,434 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:03:33,239 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 21:03:33,292 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' already exists. Loading existing vector store.
+2026-07-13 21:03:33,502 - INFO - RealEstateRAG - Initializing Google Gemini 2.5 Flash model...
+2026-07-13 21:03:33,502 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:03:33,571 - INFO - RealEstateRAG - Google Gemini 2.5 Flash model initialized successfully.
+2026-07-13 21:04:22,766 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:04:22,999 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is posession timeline'
+2026-07-13 21:04:23,011 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'what is posession timeline'
+2026-07-13 21:04:23,391 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:04:23,395 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:04:25,253 - WARNING - langchain_google_genai.chat_models - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2 seconds as it raised NotFound: 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements..
+2026-07-13 21:04:27,847 - ERROR - RealEstateRAG - Error generating answer: 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+2026-07-13 21:04:29,924 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:09:42,280 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:09:51,307 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:09:51,362 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:09:51,451 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:10:03,295 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:10:03,295 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:10:03,295 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 21:10:11,904 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:10:21,104 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 21:10:21,165 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' already exists. Loading existing vector store.
+2026-07-13 21:10:21,397 - INFO - RealEstateRAG - Initializing Google Gemini 2.5 Flash model...
+2026-07-13 21:10:21,397 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:10:21,471 - INFO - RealEstateRAG - Google Gemini 2.5 Flash model initialized successfully.
+2026-07-13 21:10:42,613 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:10:42,652 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 21:10:42,653 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'what is possession timeline'
+2026-07-13 21:10:42,767 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:10:42,768 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:10:43,432 - WARNING - langchain_google_genai.chat_models - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 15.350609233s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 15
+}
+].
+2026-07-13 21:10:45,802 - ERROR - RealEstateRAG - Error generating answer: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 12.933176605s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 12
+}
+]
+2026-07-13 21:10:46,218 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:14:57,464 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:15:05,115 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:15:05,156 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:15:05,233 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:15:16,091 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:15:16,093 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:15:16,093 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 21:15:23,043 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:15:28,963 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 21:15:29,018 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' already exists. Loading existing vector store.
+2026-07-13 21:15:29,209 - INFO - RealEstateRAG - Initializing Google Gemini 2.5 Flash model...
+2026-07-13 21:15:29,210 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:15:29,268 - INFO - RealEstateRAG - Google Gemini 2.5 Flash model initialized successfully.
+2026-07-13 21:16:14,888 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:16:14,958 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 21:16:14,963 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'what is possession timeline'
+2026-07-13 21:16:15,074 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:16:15,074 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:16:15,409 - ERROR - RealEstateRAG - Error generating answer: Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2026-07-13 21:16:15,855 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:22:09,143 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:22:20,184 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:22:20,238 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:22:20,302 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:22:33,473 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:22:33,473 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:22:33,473 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 21:22:42,405 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:22:51,538 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 21:22:51,595 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' already exists. Loading existing vector store.
+2026-07-13 21:22:51,787 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 21:22:53,107 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 21:23:06,183 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:23:06,231 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 21:23:06,238 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'what is possession timeline'
+2026-07-13 21:23:06,340 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:23:06,341 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:23:07,314 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:23:07,636 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:25:29,522 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:25:29,753 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession guideline'
+2026-07-13 21:25:29,756 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 21:25:30,363 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:25:30,436 - INFO - RealEstateRAG - Rephrased question: 'What is the possession guideline?'
+2026-07-13 21:25:30,441 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'What is the possession guideline?'
+2026-07-13 21:25:30,983 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:25:30,985 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:25:31,509 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:25:34,373 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:26:06,061 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:26:06,113 - INFO - RealEstateRAG - Running RAG pipeline for query: 'Pre-Possession Checklist'
+2026-07-13 21:26:06,116 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 21:26:17,234 - INFO - groq._base_client - Retrying request to /openai/v1/chat/completions in 0.397991 seconds
+2026-07-13 21:26:24,344 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:26:24,348 - INFO - RealEstateRAG - Rephrased question: 'What is the pre-possession checklist?'
+2026-07-13 21:26:24,348 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'What is the pre-possession checklist?'
+2026-07-13 21:26:24,411 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:26:24,412 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:26:26,738 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:26:27,045 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:26:59,949 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:26:59,977 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 21:26:59,979 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 21:27:09,457 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:27:09,459 - INFO - RealEstateRAG - Rephrased question: 'what is possession timeline'
+2026-07-13 21:27:09,459 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'what is possession timeline'
+2026-07-13 21:27:09,510 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:27:09,511 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:27:09,960 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:27:10,238 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:28:03,600 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:28:03,633 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline in 2028'
+2026-07-13 21:28:03,635 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 21:28:04,199 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:28:04,201 - INFO - RealEstateRAG - Rephrased question: 'What is the possession timeline for 2028?'
+2026-07-13 21:28:04,201 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'What is the possession timeline for 2028?'
+2026-07-13 21:28:04,247 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:28:04,248 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:28:04,874 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:28:05,203 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:28:29,059 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:28:29,145 - INFO - RealEstateRAG - Running RAG pipeline for query: 'Possession Timeline
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agreement for Sale, typically up to 6 months, to account for force majeure events
+'
+2026-07-13 21:28:29,147 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 21:28:30,108 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:28:30,111 - INFO - RealEstateRAG - Rephrased question: 'What is the possession timeline for Horizon Business Park in 2028?'
+2026-07-13 21:28:30,111 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'What is the possession timeline for Horizon Business Park in 2028?'
+2026-07-13 21:28:30,167 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:28:30,167 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:28:31,142 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:28:31,625 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:28:56,214 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:28:56,265 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 21:28:56,266 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 21:28:56,545 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:28:56,548 - INFO - RealEstateRAG - Rephrased question: 'What is the possession timeline?'
+2026-07-13 21:28:56,548 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'What is the possession timeline?'
+2026-07-13 21:28:56,596 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:28:56,598 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:28:57,152 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:28:57,460 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:29:10,011 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:29:10,035 - INFO - RealEstateRAG - Conversation memory cleared.
+2026-07-13 21:29:10,864 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:29:22,775 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:29:22,798 - INFO - RealEstateRAG - Conversation memory cleared.
+2026-07-13 21:29:23,628 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:29:33,710 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:29:33,742 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:29:53,785 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:29:53,826 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:29:54,117 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:30:06,275 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:30:06,298 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 21:30:06,300 - INFO - RealEstateRAG - Retrieving top 4 documents for query: 'what is possession timeline'
+2026-07-13 21:30:06,396 - INFO - RealEstateRAG - Successfully retrieved 4 relevant documents.
+2026-07-13 21:30:06,397 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 21:30:08,700 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 21:30:08,988 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:49:14,135 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:49:32,811 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:49:32,825 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:49:32,940 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:49:45,770 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:49:45,771 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:49:45,771 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 21:49:56,900 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:50:03,182 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 21:50:03,267 - ERROR - RealEstateRAG - Failed to initialize RAG pipeline: Storage folder ./qdrant_storage is already accessed by another instance of Qdrant client. If you require concurrent access, use Qdrant server instead.
+Traceback (most recent call last):
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\portalocker\portalocker.py", line 223, in lock
+    msvcrt.locking(  # type: ignore[attr-defined]
+PermissionError: [Errno 13] Permission denied
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\qdrant_client\local\qdrant_local.py", line 133, in _load
+    portalocker.lock(
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\portalocker\portalocker.py", line 316, in lock
+    locker(file, flags)
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\portalocker\portalocker.py", line 230, in lock
+    raise exceptions.AlreadyLocked(
+portalocker.exceptions.AlreadyLocked: (1, '[Errno 13] Permission denied')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\app.py", line 45, in load_rag_pipeline
+    manager = QdrantVectorStoreManager()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\vector_store.py", line 18, in __init__
+    self._init_client()
+  File "C:\Users\nagu\Desktop\real_estate_rag_assistant\rag\vector_store.py", line 28, in _init_client
+    self.client = QdrantClient(path=self.qdrant_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\qdrant_client\qdrant_client.py", line 132, in __init__
+    self._client = QdrantLocal(
+                   ^^^^^^^^^^^^
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\qdrant_client\local\qdrant_local.py", line 66, in __init__
+    self._load()
+  File "C:\Users\nagu\AppData\Local\Programs\Python\Python311\Lib\site-packages\qdrant_client\local\qdrant_local.py", line 138, in _load
+    raise RuntimeError(
+RuntimeError: Storage folder ./qdrant_storage is already accessed by another instance of Qdrant client. If you require concurrent access, use Qdrant server instead.
+2026-07-13 21:51:10,545 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:51:18,698 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:51:25,677 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:51:25,715 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:51:25,812 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:51:37,773 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:51:37,773 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:51:37,773 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 21:51:46,686 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:51:54,234 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 21:51:54,300 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' already exists. Loading existing vector store.
+2026-07-13 21:51:54,678 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 21:51:56,322 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 21:52:07,232 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:52:07,366 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 21:56:14,497 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:56:27,283 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:56:27,393 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:56:27,559 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:57:23,266 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:57:23,276 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:57:23,279 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 21:57:47,845 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 21:57:58,230 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 21:57:58,499 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' already exists. Loading existing vector store.
+2026-07-13 21:57:59,319 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 21:58:02,289 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 21:58:24,470 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 21:58:24,698 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 22:06:52,225 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:07:19,248 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:07:19,562 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:07:20,189 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:08:00,572 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:08:00,579 - INFO - RealEstateRAG - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 22:08:00,580 - INFO - RealEstateRAG - Embedding execution device: cpu
+2026-07-13 22:08:31,682 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 22:08:49,467 - INFO - RealEstateRAG - Connecting to Qdrant local database at: ./qdrant_storage
+2026-07-13 22:08:49,820 - INFO - RealEstateRAG - Collection 'real_estate_knowledge' already exists. Loading existing vector store.
+2026-07-13 22:08:50,788 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 22:08:56,560 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 22:09:49,837 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:09:51,572 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 22:09:54,693 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:09:54,700 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-13 22:09:54,701 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 22:09:54,703 - INFO - RealEstateRAG - Chunk 2 | sht_payment_plan.pdf | Page 1
+2026-07-13 22:09:54,703 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Skyline Horizon Towers must be made via cheque, demand draft, or bank transfer in favor of
+the designated project escrow account, in compliance 
+2026-07-13 22:09:54,703 - INFO - RealEstateRAG - Chunk 3 | unr_possession_guidelines.docx | Page 1
+2026-07-13 22:09:54,703 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-13 22:09:54,710 - INFO - RealEstateRAG - Chunk 4 | rera_general_information.md | Page 1
+2026-07-13 22:09:54,710 - INFO - RealEstateRAG - - Structural defects reported within 5 years of possession must be rectified by the promoter free of charge within 30 days of being notified.
+
+- Delayed possession entitles the buyer to either a refund with interest or continued possession of the unit with monthly interest compensation, at the buyer
+2026-07-13 22:09:54,712 - INFO - RealEstateRAG - Chunk 5 | hbp_possession_guidelines.docx | Page 1
+2026-07-13 22:09:54,718 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-13 22:09:54,718 - INFO - RealEstateRAG - Chunk 6 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 22:09:54,724 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 22:09:54,734 - INFO - RealEstateRAG - Chunk 7 | skyline_customer_support.md | Page 1
+2026-07-13 22:09:54,734 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 22:09:54,738 - INFO - RealEstateRAG - Chunk 8 | sht_possession_guidelines.docx | Page 1
+2026-07-13 22:09:54,744 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-13 22:09:54,754 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 22:09:54,757 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-13 22:09:54,759 - INFO - RealEstateRAG - Chunk 10 | unh_possession_guidelines.docx | Page 1
+2026-07-13 22:09:54,759 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 22:09:54,770 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:09:57,137 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:10:23,386 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:10:48,720 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:10:51,084 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is iiit'
+2026-07-13 22:10:51,372 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 22:10:53,006 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:10:53,124 - INFO - RealEstateRAG - Rephrased question: 'what is iiit'
+2026-07-13 22:10:54,873 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:10:54,890 - INFO - RealEstateRAG - Chunk 1 | meridian_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:10:54,904 - INFO - RealEstateRAG - Refunds are not applicable for amounts paid towards statutory charges (GST, stamp duty already deposited with government authorities, TDS) once remitted to the relevant government authority.
+2026-07-13 22:10:54,909 - INFO - RealEstateRAG - Chunk 2 | unh_brochure.pdf | Page 1
+2026-07-13 22:10:54,922 - INFO - RealEstateRAG - Flooring: Vitrified tiles in living/dining/bedrooms, anti-skid tiles in bathrooms and balconies.
+Kitchen: Granite platform with stainless steel sink and provision for modular kitchen fittings.
+Electrical: Concealed copper wiring with MCB distribution board, and provision for AC points in all bedroom
+2026-07-13 22:10:54,928 - INFO - RealEstateRAG - Chunk 3 | skyline_terms_conditions.html | Page 1
+2026-07-13 22:10:54,956 - INFO - RealEstateRAG - Skyline Horizon Developers — Terms & Conditions
+Skyline Horizon Developers — Terms & Conditions
+Website Use
+These Terms & Conditions govern your use of the Skyline Horizon Developers website. By accessing this website, you agree to be bound by these terms.
+All project information, images, floor plan
+2026-07-13 22:10:55,028 - INFO - RealEstateRAG - Chunk 4 | unh_rera_summary.pdf | Page 1
+2026-07-13 22:10:55,080 - INFO - RealEstateRAG - are updated there directly by the authority.
+Any structural defect or deficiency in quality reported by an allottee within five years of possession shall be
+rectified by the promoter without further charge, within 30 days of being notified, as per Section 14(3) of the
+RERA Act.
+2026-07-13 22:10:55,120 - INFO - RealEstateRAG - Chunk 5 | meridian_customer_support.md | Page 1
+2026-07-13 22:10:55,128 - INFO - RealEstateRAG - # Meridian Greens Realty — Customer Support Documentation
+
+## Support Channels
+
+- Phone support: available Monday-Saturday, 9:30 AM - 6:30 PM, for booking, payment, and general project queries.
+
+- Email support: for documentation requests, payment receipts, and post-possession service requests, with
+2026-07-13 22:10:55,160 - INFO - RealEstateRAG - Chunk 6 | hbp_location_guide.md | Page 1
+2026-07-13 22:10:55,185 - INFO - RealEstateRAG - # Horizon Business Park — Location & Connectivity Guide
+
+## Overview
+
+Horizon Business Park is located in Outer Ring Road, Bengaluru, an area known for its proximity to established residential neighborhoods, commercial hubs, and social infrastructure.
+
+## Connectivity
+
+- Well connected via arterial 
+2026-07-13 22:10:55,210 - INFO - RealEstateRAG - Chunk 7 | unh_payment_plan.pdf | Page 1
+2026-07-13 22:10:55,212 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Urban Nest Heights must be made via cheque, demand draft, or bank transfer in favor of the
+designated project escrow account, in compliance with
+2026-07-13 22:10:55,217 - INFO - RealEstateRAG - Chunk 8 | meridian_terms_conditions.html | Page 1
+2026-07-13 22:10:55,292 - INFO - RealEstateRAG - Meridian Greens Realty — Terms & Conditions
+Meridian Greens Realty — Terms & Conditions
+Website Use
+These Terms & Conditions govern your use of the Meridian Greens Realty website. By accessing this website, you agree to be bound by these terms.
+All project information, images, floor plans, and prici
+2026-07-13 22:10:55,305 - INFO - RealEstateRAG - Chunk 9 | urbannest_terms_conditions.html | Page 1
+2026-07-13 22:10:55,323 - INFO - RealEstateRAG - Urban Nest Infrastructures — Terms & Conditions
+Urban Nest Infrastructures — Terms & Conditions
+Website Use
+These Terms & Conditions govern your use of the Urban Nest Infrastructures website. By accessing this website, you agree to be bound by these terms.
+All project information, images, floor plan
+2026-07-13 22:10:55,369 - INFO - RealEstateRAG - Chunk 10 | mgr_payment_plan.pdf | Page 1
+2026-07-13 22:10:55,375 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Meridian Greens Residency must be made via cheque, demand draft, or bank transfer in favor
+of the designated project escrow account, in complian
+2026-07-13 22:10:55,394 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:10:55,804 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:11:08,162 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:12:15,226 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:12:16,840 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is prepossession checklist'
+2026-07-13 22:12:16,922 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 22:12:20,158 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:12:20,276 - INFO - RealEstateRAG - Rephrased question: 'What is prepossession checklist'
+2026-07-13 22:12:22,249 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:12:22,249 - INFO - RealEstateRAG - Chunk 1 | mgr_home_loan_partners.md | Page 1
+2026-07-13 22:12:22,256 - INFO - RealEstateRAG - # Meridian Greens Residency — Home Loan Partner Information
+
+## Approved Lenders
+
+Meridian Greens Residency is pre-approved for home loan disbursement by several major nationalized and private banks as well as leading housing finance companies. The current list of approved lenders is maintained by t
+2026-07-13 22:12:22,259 - INFO - RealEstateRAG - Chunk 2 | README.md | Page 1
+2026-07-13 22:12:22,259 - INFO - RealEstateRAG - | Registration process | `docx/*_registration_process.docx` (6 projects) |
+| Possession guidelines | `docx/*_possession_guidelines.docx` (6 projects) |
+| Customer support documentation | `markdown/*_customer_support.md` (3 builders) |
+| *(bonus)* Amenities guides | `markdown/*_amenities_guide.md` (6
+2026-07-13 22:12:22,263 - INFO - RealEstateRAG - Chunk 3 | propertybazaar_terms_of_use.html | Page 1
+2026-07-13 22:12:22,266 - INFO - RealEstateRAG - PropertyBazaar — Terms of Use
+PropertyBazaar — Terms of Use
+Use of Platform
+PropertyBazaar is a listing platform that aggregates project and resale property information from builders, brokers, and individual owners. PropertyBazaar is not a party to any transaction between buyers and sellers/builders
+2026-07-13 22:12:22,269 - INFO - RealEstateRAG - Chunk 4 | skyline_terms_conditions.html | Page 1
+2026-07-13 22:12:22,269 - INFO - RealEstateRAG - Skyline Horizon Developers — Terms & Conditions
+Skyline Horizon Developers — Terms & Conditions
+Website Use
+These Terms & Conditions govern your use of the Skyline Horizon Developers website. By accessing this website, you agree to be bound by these terms.
+All project information, images, floor plan
+2026-07-13 22:12:22,274 - INFO - RealEstateRAG - Chunk 5 | urbannest_customer_support.md | Page 1
+2026-07-13 22:12:22,274 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 22:12:22,276 - INFO - RealEstateRAG - Chunk 6 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 22:12:22,284 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 22:12:22,286 - INFO - RealEstateRAG - Chunk 7 | sht_home_loan_partners.md | Page 1
+2026-07-13 22:12:22,288 - INFO - RealEstateRAG - # Skyline Horizon Towers — Home Loan Partner Information
+
+## Approved Lenders
+
+Skyline Horizon Towers is pre-approved for home loan disbursement by several major nationalized and private banks as well as leading housing finance companies. The current list of approved lenders is maintained by the CRM
+2026-07-13 22:12:22,294 - INFO - RealEstateRAG - Chunk 8 | meridian_customer_support.md | Page 1
+2026-07-13 22:12:22,296 - INFO - RealEstateRAG - # Meridian Greens Realty — Customer Support Documentation
+
+## Support Channels
+
+- Phone support: available Monday-Saturday, 9:30 AM - 6:30 PM, for booking, payment, and general project queries.
+
+- Email support: for documentation requests, payment receipts, and post-possession service requests, with
+2026-07-13 22:12:22,303 - INFO - RealEstateRAG - Chunk 9 | meridian_terms_conditions.html | Page 1
+2026-07-13 22:12:22,306 - INFO - RealEstateRAG - Meridian Greens Realty — Terms & Conditions
+Meridian Greens Realty — Terms & Conditions
+Website Use
+These Terms & Conditions govern your use of the Meridian Greens Realty website. By accessing this website, you agree to be bound by these terms.
+All project information, images, floor plans, and prici
+2026-07-13 22:12:22,307 - INFO - RealEstateRAG - Chunk 10 | urbannest_terms_conditions.html | Page 1
+2026-07-13 22:12:22,309 - INFO - RealEstateRAG - Urban Nest Infrastructures — Terms & Conditions
+Urban Nest Infrastructures — Terms & Conditions
+Website Use
+These Terms & Conditions govern your use of the Urban Nest Infrastructures website. By accessing this website, you agree to be bound by these terms.
+All project information, images, floor plan
+2026-07-13 22:12:22,320 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:12:23,887 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:12:36,791 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:27:03,016 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:27:12,913 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:27:13,036 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:27:13,140 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:27:43,906 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:27:43,909 - INFO - RealEstateRAG - Loading embedding model (sentence-transformers/all-MiniLM-L6-v2) on cpu
+2026-07-13 22:28:01,856 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 22:28:10,391 - INFO - RealEstateRAG - Connecting to Qdrant at: ./qdrant_storage
+2026-07-13 22:28:10,491 - INFO - RealEstateRAG - Loaded collection: real_estate_knowledge
+2026-07-13 22:28:10,911 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 22:28:13,541 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 22:28:27,151 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:28:27,237 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 22:28:27,781 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:28:27,781 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-13 22:28:27,781 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 22:28:27,781 - INFO - RealEstateRAG - Chunk 2 | sht_payment_plan.pdf | Page 1
+2026-07-13 22:28:27,783 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Skyline Horizon Towers must be made via cheque, demand draft, or bank transfer in favor of
+the designated project escrow account, in compliance 
+2026-07-13 22:28:27,783 - INFO - RealEstateRAG - Chunk 3 | unr_possession_guidelines.docx | Page 1
+2026-07-13 22:28:27,783 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-13 22:28:27,785 - INFO - RealEstateRAG - Chunk 4 | rera_general_information.md | Page 1
+2026-07-13 22:28:27,785 - INFO - RealEstateRAG - - Structural defects reported within 5 years of possession must be rectified by the promoter free of charge within 30 days of being notified.
+
+- Delayed possession entitles the buyer to either a refund with interest or continued possession of the unit with monthly interest compensation, at the buyer
+2026-07-13 22:28:27,785 - INFO - RealEstateRAG - Chunk 5 | hbp_possession_guidelines.docx | Page 1
+2026-07-13 22:28:27,785 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-13 22:28:27,785 - INFO - RealEstateRAG - Chunk 6 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 22:28:27,785 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 22:28:27,787 - INFO - RealEstateRAG - Chunk 7 | skyline_customer_support.md | Page 1
+2026-07-13 22:28:27,787 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 22:28:27,790 - INFO - RealEstateRAG - Chunk 8 | sht_possession_guidelines.docx | Page 1
+2026-07-13 22:28:27,791 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-13 22:28:27,791 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 22:28:27,791 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-13 22:28:27,791 - INFO - RealEstateRAG - Chunk 10 | unh_possession_guidelines.docx | Page 1
+2026-07-13 22:28:27,791 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 22:28:27,791 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:28:29,163 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:28:29,863 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:28:57,831 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:28:58,076 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession guideline'
+2026-07-13 22:28:58,095 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 22:28:58,501 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:28:58,508 - INFO - RealEstateRAG - Rephrased question: 'What is possession guideline'
+2026-07-13 22:28:58,801 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:28:58,803 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-13 22:28:58,805 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 22:28:58,807 - INFO - RealEstateRAG - Chunk 2 | README.md | Page 1
+2026-07-13 22:28:58,809 - INFO - RealEstateRAG - | Registration process | `docx/*_registration_process.docx` (6 projects) |
+| Possession guidelines | `docx/*_possession_guidelines.docx` (6 projects) |
+| Customer support documentation | `markdown/*_customer_support.md` (3 builders) |
+| *(bonus)* Amenities guides | `markdown/*_amenities_guide.md` (6
+2026-07-13 22:28:58,809 - INFO - RealEstateRAG - Chunk 3 | meridian_privacy_policy.html | Page 1
+2026-07-13 22:28:58,810 - INFO - RealEstateRAG - Meridian Greens Realty — Privacy Policy
+Meridian Greens Realty — Privacy Policy
+Information We Collect
+We collect personal information you provide directly, such as your name, phone number, email address, and address, when you enquire about a project, book a site visit, or register interest through 
+2026-07-13 22:28:58,810 - INFO - RealEstateRAG - Chunk 4 | unr_possession_guidelines.docx | Page 1
+2026-07-13 22:28:58,812 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-13 22:28:58,812 - INFO - RealEstateRAG - Chunk 5 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 22:28:58,812 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 22:28:58,814 - INFO - RealEstateRAG - Chunk 6 | meridian_customer_support.md | Page 1
+2026-07-13 22:28:58,814 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 22:28:58,814 - INFO - RealEstateRAG - Chunk 7 | hbp_possession_guidelines.docx | Page 1
+2026-07-13 22:28:58,814 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-13 22:28:58,815 - INFO - RealEstateRAG - Chunk 8 | unr_possession_guidelines.docx | Page 1
+2026-07-13 22:28:58,815 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 22:28:58,815 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 22:28:58,815 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-13 22:28:58,815 - INFO - RealEstateRAG - Chunk 10 | meridian_faq.html | Page 1
+2026-07-13 22:28:58,815 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 22:28:58,815 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:29:00,128 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:29:01,007 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:29:25,401 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:29:28,065 - INFO - RealEstateRAG - Running RAG pipeline for query: 'Cancellation by the Allottee'
+2026-07-13 22:29:28,075 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 22:29:29,163 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:29:29,285 - INFO - RealEstateRAG - Rephrased question: 'What are the guidelines for cancellation by the Allottee'
+2026-07-13 22:29:31,054 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:29:31,056 - INFO - RealEstateRAG - Chunk 1 | urbannest_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:29:31,056 - INFO - RealEstateRAG - Urban Nest Infrastructures — Cancellation & Refund Policy
+
+Cancellation by the Allottee
+
+An Allottee may request cancellation of their booking with Urban Nest Infrastructures by submitting a written request to the sales/CRM team, along with the original booking receipt and payment proofs.
+
+If cancel
+2026-07-13 22:29:31,056 - INFO - RealEstateRAG - Chunk 2 | mgr_sale_agreement_terms.docx | Page 1
+2026-07-13 22:29:31,056 - INFO - RealEstateRAG - The Promoter shall not make any additions or alterations in the sanctioned plans, layout plans, and specifications of the building without the previous written consent of at least two-thirds of the allottees, other than minor alterations required due to architectural and structural reasons.
+
+Title t
+2026-07-13 22:29:31,056 - INFO - RealEstateRAG - Chunk 3 | meridian_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:29:31,056 - INFO - RealEstateRAG - If cancellation is requested after execution of the Agreement for Sale, the forfeiture amount and refund timeline shall be governed by the specific clauses of the executed Agreement for Sale, consistent with applicable RERA rules capping forfeiture amounts.
+
+Cancellation by the Promoter
+
+Meridian Gr
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - Chunk 4 | mlv_rera_summary.pdf | Page 1
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - are updated there directly by the authority.
+Any structural defect or deficiency in quality reported by an allottee within five years of possession shall be
+rectified by the promoter without further charge, within 30 days of being notified, as per Section 14(3) of the
+RERA Act.
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - Chunk 5 | skyline_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - Skyline Horizon Developers — Cancellation & Refund Policy
+
+Cancellation by the Allottee
+
+An Allottee may request cancellation of their booking with Skyline Horizon Developers by submitting a written request to the sales/CRM team, along with the original booking receipt and payment proofs.
+
+If cancel
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - Chunk 6 | meridian_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - Meridian Greens Realty — Cancellation & Refund Policy
+
+Cancellation by the Allottee
+
+An Allottee may request cancellation of their booking with Meridian Greens Realty by submitting a written request to the sales/CRM team, along with the original booking receipt and payment proofs.
+
+If cancellation i
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - Chunk 7 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - Chunk 8 | urbannest_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - If cancellation is requested after execution of the Agreement for Sale, the forfeiture amount and refund timeline shall be governed by the specific clauses of the executed Agreement for Sale, consistent with applicable RERA rules capping forfeiture amounts.
+
+Cancellation by the Promoter
+
+Urban Nest 
+2026-07-13 22:29:31,061 - INFO - RealEstateRAG - Chunk 9 | skyline_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:29:31,069 - INFO - RealEstateRAG - If cancellation is requested after execution of the Agreement for Sale, the forfeiture amount and refund timeline shall be governed by the specific clauses of the executed Agreement for Sale, consistent with applicable RERA rules capping forfeiture amounts.
+
+Cancellation by the Promoter
+
+Skyline Hor
+2026-07-13 22:29:31,075 - INFO - RealEstateRAG - Chunk 10 | mlv_sale_agreement_terms.docx | Page 1
+2026-07-13 22:29:31,075 - INFO - RealEstateRAG - The Promoter shall not make any additions or alterations in the sanctioned plans, layout plans, and specifications of the building without the previous written consent of at least two-thirds of the allottees, other than minor alterations required due to architectural and structural reasons.
+
+Title t
+2026-07-13 22:29:31,077 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:29:32,551 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:29:40,051 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:32:40,680 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:32:50,794 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:32:50,913 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:32:51,020 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:33:26,957 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:33:26,957 - INFO - RealEstateRAG - Loading embedding model (sentence-transformers/all-MiniLM-L6-v2) on cpu
+2026-07-13 22:33:50,709 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 22:34:22,086 - INFO - RealEstateRAG - Connecting to Qdrant at: ./qdrant_storage
+2026-07-13 22:34:22,879 - INFO - RealEstateRAG - Loaded collection: real_estate_knowledge
+2026-07-13 22:34:24,524 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 22:34:35,455 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 22:34:55,430 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:34:55,609 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 22:34:55,940 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:34:55,940 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-13 22:34:55,940 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 22:34:55,940 - INFO - RealEstateRAG - Chunk 2 | sht_payment_plan.pdf | Page 1
+2026-07-13 22:34:55,940 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Skyline Horizon Towers must be made via cheque, demand draft, or bank transfer in favor of
+the designated project escrow account, in compliance 
+2026-07-13 22:34:55,940 - INFO - RealEstateRAG - Chunk 3 | unr_possession_guidelines.docx | Page 1
+2026-07-13 22:34:55,945 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-13 22:34:55,945 - INFO - RealEstateRAG - Chunk 4 | rera_general_information.md | Page 1
+2026-07-13 22:34:55,947 - INFO - RealEstateRAG - - Structural defects reported within 5 years of possession must be rectified by the promoter free of charge within 30 days of being notified.
+
+- Delayed possession entitles the buyer to either a refund with interest or continued possession of the unit with monthly interest compensation, at the buyer
+2026-07-13 22:34:55,948 - INFO - RealEstateRAG - Chunk 5 | hbp_possession_guidelines.docx | Page 1
+2026-07-13 22:34:55,950 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-13 22:34:55,950 - INFO - RealEstateRAG - Chunk 6 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 22:34:55,952 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 22:34:55,954 - INFO - RealEstateRAG - Chunk 7 | skyline_customer_support.md | Page 1
+2026-07-13 22:34:55,956 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 22:34:55,956 - INFO - RealEstateRAG - Chunk 8 | sht_possession_guidelines.docx | Page 1
+2026-07-13 22:34:55,956 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-13 22:34:55,956 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 22:34:55,958 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-13 22:34:55,958 - INFO - RealEstateRAG - Chunk 10 | unh_possession_guidelines.docx | Page 1
+2026-07-13 22:34:55,958 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 22:34:55,958 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:34:58,576 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:34:59,524 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:35:11,632 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:35:11,719 - INFO - RealEstateRAG - Running RAG pipeline for query: 'Cancellation by the Allottee'
+2026-07-13 22:35:11,719 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 22:35:12,324 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:35:12,326 - INFO - RealEstateRAG - Rephrased question: 'Cancellation by the Allottee'
+2026-07-13 22:35:12,500 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:35:12,500 - INFO - RealEstateRAG - Chunk 1 | urbannest_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:35:12,501 - INFO - RealEstateRAG - Urban Nest Infrastructures — Cancellation & Refund Policy
+
+Cancellation by the Allottee
+
+An Allottee may request cancellation of their booking with Urban Nest Infrastructures by submitting a written request to the sales/CRM team, along with the original booking receipt and payment proofs.
+
+If cancel
+2026-07-13 22:35:12,505 - INFO - RealEstateRAG - Chunk 2 | mlv_sale_agreement_terms.docx | Page 1
+2026-07-13 22:35:12,505 - INFO - RealEstateRAG - The Promoter shall not make any additions or alterations in the sanctioned plans, layout plans, and specifications of the building without the previous written consent of at least two-thirds of the allottees, other than minor alterations required due to architectural and structural reasons.
+
+Title t
+2026-07-13 22:35:12,505 - INFO - RealEstateRAG - Chunk 3 | meridian_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:35:12,505 - INFO - RealEstateRAG - If cancellation is requested after execution of the Agreement for Sale, the forfeiture amount and refund timeline shall be governed by the specific clauses of the executed Agreement for Sale, consistent with applicable RERA rules capping forfeiture amounts.
+
+Cancellation by the Promoter
+
+Meridian Gr
+2026-07-13 22:35:12,505 - INFO - RealEstateRAG - Chunk 4 | skyline_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:35:12,505 - INFO - RealEstateRAG - Skyline Horizon Developers — Cancellation & Refund Policy
+
+Cancellation by the Allottee
+
+An Allottee may request cancellation of their booking with Skyline Horizon Developers by submitting a written request to the sales/CRM team, along with the original booking receipt and payment proofs.
+
+If cancel
+2026-07-13 22:35:12,505 - INFO - RealEstateRAG - Chunk 5 | mlv_rera_summary.pdf | Page 1
+2026-07-13 22:35:12,505 - INFO - RealEstateRAG - are updated there directly by the authority.
+Any structural defect or deficiency in quality reported by an allottee within five years of possession shall be
+rectified by the promoter without further charge, within 30 days of being notified, as per Section 14(3) of the
+RERA Act.
+2026-07-13 22:35:12,505 - INFO - RealEstateRAG - Chunk 6 | meridian_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:35:12,509 - INFO - RealEstateRAG - Meridian Greens Realty — Cancellation & Refund Policy
+
+Cancellation by the Allottee
+
+An Allottee may request cancellation of their booking with Meridian Greens Realty by submitting a written request to the sales/CRM team, along with the original booking receipt and payment proofs.
+
+If cancellation i
+2026-07-13 22:35:12,511 - INFO - RealEstateRAG - Chunk 7 | hbp_sale_agreement_terms.docx | Page 1
+2026-07-13 22:35:12,511 - INFO - RealEstateRAG - Horizon Business Park — Agreement for Sale: Key Terms
+
+Definitions
+
+"Allottee" means the person(s) to whom the unit is allotted, sold, or transferred by the Promoter, and includes their legal heirs and permitted assigns.
+
+"Promoter" means Skyline Horizon Developers, registered under the applicable R
+2026-07-13 22:35:12,511 - INFO - RealEstateRAG - Chunk 8 | urbannest_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:35:12,514 - INFO - RealEstateRAG - If cancellation is requested after execution of the Agreement for Sale, the forfeiture amount and refund timeline shall be governed by the specific clauses of the executed Agreement for Sale, consistent with applicable RERA rules capping forfeiture amounts.
+
+Cancellation by the Promoter
+
+Urban Nest 
+2026-07-13 22:35:12,514 - INFO - RealEstateRAG - Chunk 9 | skyline_cancellation_refund_policy.docx | Page 1
+2026-07-13 22:35:12,516 - INFO - RealEstateRAG - If cancellation is requested after execution of the Agreement for Sale, the forfeiture amount and refund timeline shall be governed by the specific clauses of the executed Agreement for Sale, consistent with applicable RERA rules capping forfeiture amounts.
+
+Cancellation by the Promoter
+
+Skyline Hor
+2026-07-13 22:35:12,524 - INFO - RealEstateRAG - Chunk 10 | unh_sale_agreement_terms.docx | Page 1
+2026-07-13 22:35:12,526 - INFO - RealEstateRAG - The Promoter shall not make any additions or alterations in the sanctioned plans, layout plans, and specifications of the building without the previous written consent of at least two-thirds of the allottees, other than minor alterations required due to architectural and structural reasons.
+
+Title t
+2026-07-13 22:35:12,526 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:35:13,522 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:35:14,141 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:42:25,137 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:42:34,622 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:42:34,700 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:42:34,842 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:43:00,420 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:43:00,420 - INFO - RealEstateRAG - Loading embedding model (sentence-transformers/all-MiniLM-L6-v2) on cpu
+2026-07-13 22:43:23,040 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 22:43:35,938 - INFO - RealEstateRAG - Connecting to Qdrant at: ./qdrant_storage
+2026-07-13 22:43:36,345 - INFO - RealEstateRAG - Loaded collection: real_estate_knowledge
+2026-07-13 22:43:37,981 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 22:43:57,632 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 22:44:12,416 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:44:12,569 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 22:44:14,204 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:44:14,204 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-13 22:44:14,204 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 22:44:14,204 - INFO - RealEstateRAG - Chunk 2 | sht_payment_plan.pdf | Page 1
+2026-07-13 22:44:14,204 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Skyline Horizon Towers must be made via cheque, demand draft, or bank transfer in favor of
+the designated project escrow account, in compliance 
+2026-07-13 22:44:14,211 - INFO - RealEstateRAG - Chunk 3 | unr_possession_guidelines.docx | Page 1
+2026-07-13 22:44:14,211 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-13 22:44:14,217 - INFO - RealEstateRAG - Chunk 4 | rera_general_information.md | Page 1
+2026-07-13 22:44:14,221 - INFO - RealEstateRAG - - Structural defects reported within 5 years of possession must be rectified by the promoter free of charge within 30 days of being notified.
+
+- Delayed possession entitles the buyer to either a refund with interest or continued possession of the unit with monthly interest compensation, at the buyer
+2026-07-13 22:44:14,222 - INFO - RealEstateRAG - Chunk 5 | hbp_possession_guidelines.docx | Page 1
+2026-07-13 22:44:14,222 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-13 22:44:14,234 - INFO - RealEstateRAG - Chunk 6 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 22:44:14,236 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 22:44:14,238 - INFO - RealEstateRAG - Chunk 7 | skyline_customer_support.md | Page 1
+2026-07-13 22:44:14,238 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 22:44:14,254 - INFO - RealEstateRAG - Chunk 8 | sht_possession_guidelines.docx | Page 1
+2026-07-13 22:44:14,256 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-13 22:44:14,256 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 22:44:14,256 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-13 22:44:14,259 - INFO - RealEstateRAG - Chunk 10 | unh_possession_guidelines.docx | Page 1
+2026-07-13 22:44:14,267 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 22:44:14,271 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:44:16,140 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:44:20,340 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:47:55,144 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:47:56,432 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is nagu'
+2026-07-13 22:47:56,438 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 22:47:58,099 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:47:58,290 - INFO - RealEstateRAG - Rephrased question: 'what is nagu'
+2026-07-13 22:48:01,746 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:48:01,756 - INFO - RealEstateRAG - Chunk 1 | unr_location_guide.md | Page 1
+2026-07-13 22:48:01,776 - INFO - RealEstateRAG - # Urban Nest Riverside — Location & Connectivity Guide
+
+## Overview
+
+Urban Nest Riverside is located in Kokapet, Hyderabad, an area known for its proximity to established residential neighborhoods, commercial hubs, and social infrastructure.
+
+## Connectivity
+
+- Well connected via arterial roads to t
+2026-07-13 22:48:01,786 - INFO - RealEstateRAG - Chunk 2 | rera_general_information.md | Page 1
+2026-07-13 22:48:01,792 - INFO - RealEstateRAG - # Understanding RERA — General Information for Homebuyers
+
+## What is RERA
+
+The Real Estate (Regulation and Development) Act, 2016 (RERA) is a central legislation aimed at protecting homebuyers and boosting investment in the real estate sector by mandating transparency and accountability from develo
+2026-07-13 22:48:01,814 - INFO - RealEstateRAG - Chunk 3 | home_loan_general_guide.md | Page 1
+2026-07-13 22:48:01,816 - INFO - RealEstateRAG - # Home Loan Information Guide
+
+## Eligibility
+
+- Salaried applicants: minimum age 21 years, stable income with at least 2 years of continuous employment, typically required.
+
+- Self-employed applicants: minimum 3 years of business continuity and audited financial statements for the last 2-3 years ty
+2026-07-13 22:48:01,826 - INFO - RealEstateRAG - Chunk 4 | unh_registration_process.docx | Page 1
+2026-07-13 22:48:01,826 - INFO - RealEstateRAG - Urban Nest Heights — Registration Process Guide
+
+Documents Required
+
+PAN Card and Aadhaar Card (or valid government-issued photo ID) of all buyers.
+
+Passport-size photographs of all buyers and, where applicable, of the seller.
+
+Copy of the executed Agreement for Sale / Sale Deed.
+
+Proof of payment o
+2026-07-13 22:48:01,836 - INFO - RealEstateRAG - Chunk 5 | propertybazaar_terms_of_use.html | Page 1
+2026-07-13 22:48:01,838 - INFO - RealEstateRAG - PropertyBazaar — Terms of Use
+PropertyBazaar — Terms of Use
+Use of Platform
+PropertyBazaar is a listing platform that aggregates project and resale property information from builders, brokers, and individual owners. PropertyBazaar is not a party to any transaction between buyers and sellers/builders
+2026-07-13 22:48:01,842 - INFO - RealEstateRAG - Chunk 6 | urbannest_about.html | Page 1
+2026-07-13 22:48:01,842 - INFO - RealEstateRAG - About Urban Nest Infrastructures
+About Urban Nest Infrastructures
+Company Profile
+Founded in 2011 and headquartered in Hyderabad, Telangana, Urban Nest Infrastructures has grown into a recognized name in the region's real estate sector, with a portfolio spanning residential apartments, villas, and c
+2026-07-13 22:48:01,884 - INFO - RealEstateRAG - Chunk 7 | unh_brochure.pdf | Page 1
+2026-07-13 22:48:01,898 - INFO - RealEstateRAG - Flooring: Vitrified tiles in living/dining/bedrooms, anti-skid tiles in bathrooms and balconies.
+Kitchen: Granite platform with stainless steel sink and provision for modular kitchen fittings.
+Electrical: Concealed copper wiring with MCB distribution board, and provision for AC points in all bedroom
+2026-07-13 22:48:01,908 - INFO - RealEstateRAG - Chunk 8 | unr_sale_agreement_terms.docx | Page 1
+2026-07-13 22:48:01,922 - INFO - RealEstateRAG - Urban Nest Riverside — Agreement for Sale: Key Terms
+
+Definitions
+
+"Allottee" means the person(s) to whom the unit is allotted, sold, or transferred by the Promoter, and includes their legal heirs and permitted assigns.
+
+"Promoter" means Urban Nest Infrastructures, registered under the applicable RE
+2026-07-13 22:48:01,944 - INFO - RealEstateRAG - Chunk 9 | hbp_rera_summary.pdf | Page 1
+2026-07-13 22:48:01,958 - INFO - RealEstateRAG - official website before making any payment, since registration validity, extensions, and any regulatory orders
+are updated there directly by the authority.
+Any structural defect or deficiency in quality reported by an allottee within five years of possession shall be
+rectified by the promoter withou
+2026-07-13 22:48:01,966 - INFO - RealEstateRAG - Chunk 10 | unh_rera_summary.pdf | Page 1
+2026-07-13 22:48:01,988 - INFO - RealEstateRAG - Urban Nest Heights — RERA Registration Summary
+RERA Registration Details
+Project Name: Urban Nest Heights
+Promoter: Urban Nest Infrastructures
+RERA Registration Number: P01100005421
+Project Location: Gachibowli, Hyderabad
+Total Units Registered: 350
+Proposed Date of Completion: January 2028
+Regulato
+2026-07-13 22:48:01,992 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:48:02,390 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:48:12,786 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:50:16,814 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:50:17,131 - INFO - RealEstateRAG - Running RAG pipeline for query: 'Tell me about Skyline Horizon Towers.'
+2026-07-13 22:50:17,140 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 22:50:18,723 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:50:18,773 - INFO - RealEstateRAG - Rephrased question: 'What is Skyline Horizon Towers?'
+2026-07-13 22:50:21,564 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:50:21,567 - INFO - RealEstateRAG - Chunk 1 | sht_brochure.pdf | Page 1
+2026-07-13 22:50:21,568 - INFO - RealEstateRAG - Skyline Horizon Towers — Project Brochure
+Project Overview
+Skyline Horizon Towers is a Residential (2/3 BHK apartments) project developed by Skyline Horizon
+Developers, located in Whitefield, Bengaluru. The project spans 4 towers/blocks with a total of 480 units.
+Possession is scheduled for December
+2026-07-13 22:50:21,568 - INFO - RealEstateRAG - Chunk 2 | skyline_privacy_policy.html | Page 1
+2026-07-13 22:50:21,568 - INFO - RealEstateRAG - Skyline Horizon Developers — Privacy Policy
+Skyline Horizon Developers — Privacy Policy
+Information We Collect
+We collect personal information you provide directly, such as your name, phone number, email address, and address, when you enquire about a project, book a site visit, or register interest 
+2026-07-13 22:50:21,568 - INFO - RealEstateRAG - Chunk 3 | skyline_about.html | Page 1
+2026-07-13 22:50:21,568 - INFO - RealEstateRAG - About Skyline Horizon Developers
+About Skyline Horizon Developers
+Company Profile
+Founded in 1998 and headquartered in Bengaluru, Karnataka, Skyline Horizon Developers has grown into a recognized name in the region's real estate sector, with a portfolio spanning residential apartments, villas, and c
+2026-07-13 22:50:21,568 - INFO - RealEstateRAG - Chunk 4 | sht_location_guide.md | Page 1
+2026-07-13 22:50:21,568 - INFO - RealEstateRAG - # Skyline Horizon Towers — Location & Connectivity Guide
+
+## Overview
+
+Skyline Horizon Towers is located in Whitefield, Bengaluru, an area known for its proximity to established residential neighborhoods, commercial hubs, and social infrastructure.
+
+## Connectivity
+
+- Well connected via arterial roa
+2026-07-13 22:50:21,574 - INFO - RealEstateRAG - Chunk 5 | sht_home_loan_partners.md | Page 1
+2026-07-13 22:50:21,574 - INFO - RealEstateRAG - # Skyline Horizon Towers — Home Loan Partner Information
+
+## Approved Lenders
+
+Skyline Horizon Towers is pre-approved for home loan disbursement by several major nationalized and private banks as well as leading housing finance companies. The current list of approved lenders is maintained by the CRM
+2026-07-13 22:50:21,578 - INFO - RealEstateRAG - Chunk 6 | sht_sale_agreement_terms.docx | Page 1
+2026-07-13 22:50:21,584 - INFO - RealEstateRAG - Skyline Horizon Towers — Agreement for Sale: Key Terms
+
+Definitions
+
+"Allottee" means the person(s) to whom the unit is allotted, sold, or transferred by the Promoter, and includes their legal heirs and permitted assigns.
+
+"Promoter" means Skyline Horizon Developers, registered under the applicable 
+2026-07-13 22:50:21,589 - INFO - RealEstateRAG - Chunk 7 | sht_possession_guidelines.docx | Page 1
+2026-07-13 22:50:21,591 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-13 22:50:21,592 - INFO - RealEstateRAG - Chunk 8 | propertybazaar_listing_hbp.html | Page 1
+2026-07-13 22:50:21,593 - INFO - RealEstateRAG - Horizon Business Park — Listing on PropertyBazaar
+Horizon Business Park — Listing on PropertyBazaar
+Listing Summary
+Horizon Business Park by Skyline Horizon Developers is listed on PropertyBazaar under Commercial (office spaces), located at Outer Ring Road, Bengaluru.
+Price range as listed: INR 1.2 
+2026-07-13 22:50:21,599 - INFO - RealEstateRAG - Chunk 9 | skyline_home.html | Page 1
+2026-07-13 22:50:21,599 - INFO - RealEstateRAG - Skyline Horizon Developers — Home
+Skyline Horizon Developers — Home
+Welcome
+Skyline Horizon Developers is a real estate developer headquartered in Bengaluru, Karnataka, delivering residential and commercial projects since 1998.
+Our Projects
+Skyline Horizon Towers (Residential (2/3 BHK apartments)) i
+2026-07-13 22:50:21,599 - INFO - RealEstateRAG - Chunk 10 | propertybazaar_listing_sht.html | Page 1
+2026-07-13 22:50:21,599 - INFO - RealEstateRAG - Skyline Horizon Towers — Listing on PropertyBazaar
+Skyline Horizon Towers — Listing on PropertyBazaar
+Listing Summary
+Skyline Horizon Towers by Skyline Horizon Developers is listed on PropertyBazaar under Residential (2/3 BHK apartments), located at Whitefield, Bengaluru.
+Price range as listed: INR 
+2026-07-13 22:50:21,603 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:50:23,350 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:50:31,364 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:50:35,365 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:50:35,616 - INFO - RealEstateRAG - Running RAG pipeline for query: 'What are its amenities?'
+2026-07-13 22:50:35,620 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-13 22:50:36,256 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:50:36,270 - INFO - RealEstateRAG - Rephrased question: 'What are the amenities of Skyline Horizon Towers?'
+2026-07-13 22:50:36,991 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 22:50:36,991 - INFO - RealEstateRAG - Chunk 1 | sht_brochure.pdf | Page 1
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Skyline Horizon Towers — Project Brochure
+Project Overview
+Skyline Horizon Towers is a Residential (2/3 BHK apartments) project developed by Skyline Horizon
+Developers, located in Whitefield, Bengaluru. The project spans 4 towers/blocks with a total of 480 units.
+Possession is scheduled for December
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Chunk 2 | sht_amenities_guide.md | Page 1
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - # Skyline Horizon Towers — Amenities Guide
+
+## Recreational Amenities
+
+- Clubhouse with indoor games room, gymnasium, and multipurpose banquet hall.
+
+- Swimming pool with a separate children's pool and deck seating area.
+
+- Landscaped gardens, jogging/walking track, and outdoor seating pockets.
+
+- D
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Chunk 3 | skyline_privacy_policy.html | Page 1
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Skyline Horizon Developers — Privacy Policy
+Skyline Horizon Developers — Privacy Policy
+Information We Collect
+We collect personal information you provide directly, such as your name, phone number, email address, and address, when you enquire about a project, book a site visit, or register interest 
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Chunk 4 | sht_brochure.pdf | Page 1
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Flooring: Vitrified tiles in living/dining/bedrooms, anti-skid tiles in bathrooms and balconies.
+Kitchen: Granite platform with stainless steel sink and provision for modular kitchen fittings.
+Electrical: Concealed copper wiring with MCB distribution board, and provision for AC points in all bedroom
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Chunk 5 | sht_possession_guidelines.docx | Page 1
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Chunk 6 | propertybazaar_listing_hbp.html | Page 1
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Horizon Business Park — Listing on PropertyBazaar
+Horizon Business Park — Listing on PropertyBazaar
+Listing Summary
+Horizon Business Park by Skyline Horizon Developers is listed on PropertyBazaar under Commercial (office spaces), located at Outer Ring Road, Bengaluru.
+Price range as listed: INR 1.2 
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - Chunk 7 | sht_floor_plans.md | Page 1
+2026-07-13 22:50:36,996 - INFO - RealEstateRAG - # Skyline Horizon Towers — Floor Plan Descriptions
+
+## Unit Types
+
+Skyline Horizon Towers offers Residential (2/3 BHK apartments). Exact carpet area and configuration vary by tower and floor; the figures below are representative of the typical unit mix offered at launch.
+
+## Typical Configurations
+
+
+2026-07-13 22:50:37,004 - INFO - RealEstateRAG - Chunk 8 | sht_sale_agreement_terms.docx | Page 1
+2026-07-13 22:50:37,004 - INFO - RealEstateRAG - Skyline Horizon Towers — Agreement for Sale: Key Terms
+
+Definitions
+
+"Allottee" means the person(s) to whom the unit is allotted, sold, or transferred by the Promoter, and includes their legal heirs and permitted assigns.
+
+"Promoter" means Skyline Horizon Developers, registered under the applicable 
+2026-07-13 22:50:37,004 - INFO - RealEstateRAG - Chunk 9 | sht_location_guide.md | Page 1
+2026-07-13 22:50:37,004 - INFO - RealEstateRAG - # Skyline Horizon Towers — Location & Connectivity Guide
+
+## Overview
+
+Skyline Horizon Towers is located in Whitefield, Bengaluru, an area known for its proximity to established residential neighborhoods, commercial hubs, and social infrastructure.
+
+## Connectivity
+
+- Well connected via arterial roa
+2026-07-13 22:50:37,007 - INFO - RealEstateRAG - Chunk 10 | sht_home_loan_partners.md | Page 1
+2026-07-13 22:50:37,007 - INFO - RealEstateRAG - # Skyline Horizon Towers — Home Loan Partner Information
+
+## Approved Lenders
+
+Skyline Horizon Towers is pre-approved for home loan disbursement by several major nationalized and private banks as well as leading housing finance companies. The current list of approved lenders is maintained by the CRM
+2026-07-13 22:50:37,007 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 22:50:39,193 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 22:50:40,419 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:51:28,632 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:51:32,746 - INFO - RealEstateRAG - Conversation memory cleared.
+2026-07-13 22:51:59,657 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:52:00,914 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 22:52:01,598 - INFO - RealEstateRAG - Conversation memory cleared.
+2026-07-13 22:52:03,136 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:22:28,358 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:22:44,854 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:22:44,993 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:22:45,149 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:23:34,880 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:23:34,886 - INFO - RealEstateRAG - Loading embedding model (sentence-transformers/all-MiniLM-L6-v2) on cpu
+2026-07-13 23:24:21,009 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 23:31:49,231 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:32:01,021 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:32:01,181 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:32:01,349 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:32:31,830 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:32:31,838 - INFO - RealEstateRAG - Loading embedding model (sentence-transformers/all-MiniLM-L6-v2) on cpu
+2026-07-13 23:33:11,520 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 23:33:20,717 - INFO - RealEstateRAG - Connecting to Qdrant at: ./qdrant_storage
+2026-07-13 23:33:21,176 - INFO - RealEstateRAG - Loaded collection: real_estate_knowledge
+2026-07-13 23:33:21,903 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 23:33:30,440 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 23:33:52,990 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:33:53,418 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 23:33:55,283 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 23:33:55,285 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-13 23:33:55,285 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 23:33:55,285 - INFO - RealEstateRAG - Chunk 2 | sht_payment_plan.pdf | Page 1
+2026-07-13 23:33:55,287 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Skyline Horizon Towers must be made via cheque, demand draft, or bank transfer in favor of
+the designated project escrow account, in compliance 
+2026-07-13 23:33:55,287 - INFO - RealEstateRAG - Chunk 3 | unr_possession_guidelines.docx | Page 1
+2026-07-13 23:33:55,287 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-13 23:33:55,289 - INFO - RealEstateRAG - Chunk 4 | rera_general_information.md | Page 1
+2026-07-13 23:33:55,289 - INFO - RealEstateRAG - - Structural defects reported within 5 years of possession must be rectified by the promoter free of charge within 30 days of being notified.
+
+- Delayed possession entitles the buyer to either a refund with interest or continued possession of the unit with monthly interest compensation, at the buyer
+2026-07-13 23:33:55,289 - INFO - RealEstateRAG - Chunk 5 | hbp_possession_guidelines.docx | Page 1
+2026-07-13 23:33:55,291 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-13 23:33:55,296 - INFO - RealEstateRAG - Chunk 6 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 23:33:55,300 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 23:33:55,302 - INFO - RealEstateRAG - Chunk 7 | skyline_customer_support.md | Page 1
+2026-07-13 23:33:55,304 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 23:33:55,306 - INFO - RealEstateRAG - Chunk 8 | sht_possession_guidelines.docx | Page 1
+2026-07-13 23:33:55,306 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-13 23:33:55,312 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 23:33:55,316 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-13 23:33:55,318 - INFO - RealEstateRAG - Chunk 10 | unh_possession_guidelines.docx | Page 1
+2026-07-13 23:33:55,336 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 23:33:55,372 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 23:33:56,528 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 23:34:05,106 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:39:08,397 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:39:19,176 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:39:19,333 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:39:19,466 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:39:54,141 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:39:54,144 - INFO - RealEstateRAG - Loading embedding model (sentence-transformers/all-MiniLM-L6-v2) on cpu
+2026-07-13 23:40:13,922 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 23:40:24,675 - INFO - RealEstateRAG - Connecting to Qdrant at: ./qdrant_storage
+2026-07-13 23:40:24,838 - INFO - RealEstateRAG - Loaded collection: real_estate_knowledge
+2026-07-13 23:40:25,617 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 23:40:30,840 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 23:41:57,693 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:42:01,099 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession guideline'
+2026-07-13 23:42:08,253 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 23:42:08,263 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-13 23:42:08,267 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 23:42:08,271 - INFO - RealEstateRAG - Chunk 2 | README.md | Page 1
+2026-07-13 23:42:08,273 - INFO - RealEstateRAG - | Registration process | `docx/*_registration_process.docx` (6 projects) |
+| Possession guidelines | `docx/*_possession_guidelines.docx` (6 projects) |
+| Customer support documentation | `markdown/*_customer_support.md` (3 builders) |
+| *(bonus)* Amenities guides | `markdown/*_amenities_guide.md` (6
+2026-07-13 23:42:08,277 - INFO - RealEstateRAG - Chunk 3 | meridian_privacy_policy.html | Page 1
+2026-07-13 23:42:08,277 - INFO - RealEstateRAG - Meridian Greens Realty — Privacy Policy
+Meridian Greens Realty — Privacy Policy
+Information We Collect
+We collect personal information you provide directly, such as your name, phone number, email address, and address, when you enquire about a project, book a site visit, or register interest through 
+2026-07-13 23:42:08,283 - INFO - RealEstateRAG - Chunk 4 | unr_possession_guidelines.docx | Page 1
+2026-07-13 23:42:08,289 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-13 23:42:08,293 - INFO - RealEstateRAG - Chunk 5 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 23:42:08,295 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 23:42:08,297 - INFO - RealEstateRAG - Chunk 6 | meridian_customer_support.md | Page 1
+2026-07-13 23:42:08,297 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 23:42:08,300 - INFO - RealEstateRAG - Chunk 7 | hbp_possession_guidelines.docx | Page 1
+2026-07-13 23:42:08,301 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-13 23:42:08,301 - INFO - RealEstateRAG - Chunk 8 | unr_possession_guidelines.docx | Page 1
+2026-07-13 23:42:08,305 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 23:42:08,307 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 23:42:08,309 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-13 23:42:08,309 - INFO - RealEstateRAG - Chunk 10 | meridian_faq.html | Page 1
+2026-07-13 23:42:08,309 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 23:42:08,316 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 23:42:10,229 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 23:42:17,378 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:50:01,720 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:50:11,059 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:50:11,157 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:50:11,224 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:50:26,943 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:50:26,943 - INFO - RealEstateRAG - Connecting to Qdrant at: ./qdrant_storage
+2026-07-13 23:50:27,017 - INFO - RealEstateRAG - Loaded collection: real_estate_knowledge
+2026-07-13 23:50:27,017 - INFO - RealEstateRAG - Loading embedding model (sentence-transformers/all-MiniLM-L6-v2) on cpu
+2026-07-13 23:50:38,843 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 23:50:46,014 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 23:50:50,015 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 23:51:59,887 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:52:00,537 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 23:52:01,706 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 23:52:01,707 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-13 23:52:01,707 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 23:52:01,708 - INFO - RealEstateRAG - Chunk 2 | sht_payment_plan.pdf | Page 1
+2026-07-13 23:52:01,708 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Skyline Horizon Towers must be made via cheque, demand draft, or bank transfer in favor of
+the designated project escrow account, in compliance 
+2026-07-13 23:52:01,708 - INFO - RealEstateRAG - Chunk 3 | unr_possession_guidelines.docx | Page 1
+2026-07-13 23:52:01,710 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-13 23:52:01,711 - INFO - RealEstateRAG - Chunk 4 | rera_general_information.md | Page 1
+2026-07-13 23:52:01,711 - INFO - RealEstateRAG - - Structural defects reported within 5 years of possession must be rectified by the promoter free of charge within 30 days of being notified.
+
+- Delayed possession entitles the buyer to either a refund with interest or continued possession of the unit with monthly interest compensation, at the buyer
+2026-07-13 23:52:01,712 - INFO - RealEstateRAG - Chunk 5 | hbp_possession_guidelines.docx | Page 1
+2026-07-13 23:52:01,712 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-13 23:52:01,712 - INFO - RealEstateRAG - Chunk 6 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 23:52:01,712 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 23:52:01,713 - INFO - RealEstateRAG - Chunk 7 | skyline_customer_support.md | Page 1
+2026-07-13 23:52:01,713 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 23:52:01,714 - INFO - RealEstateRAG - Chunk 8 | sht_possession_guidelines.docx | Page 1
+2026-07-13 23:52:01,718 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-13 23:52:01,720 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 23:52:01,720 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-13 23:52:01,721 - INFO - RealEstateRAG - Chunk 10 | unh_possession_guidelines.docx | Page 1
+2026-07-13 23:52:01,721 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 23:52:01,725 - INFO - RealEstateRAG - Generating response from Gemini...
+2026-07-13 23:52:02,851 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 23:52:06,396 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:58:20,356 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:58:28,939 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:58:29,025 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:58:29,100 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:58:47,196 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:58:47,196 - INFO - RealEstateRAG - Connecting to Qdrant at: ./qdrant_storage
+2026-07-13 23:58:47,292 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-13 23:58:49,097 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-13 23:58:49,102 - INFO - RealEstateRAG - Loading embeddings...
+2026-07-13 23:58:49,103 - INFO - RealEstateRAG - Loading embedding model (sentence-transformers/all-MiniLM-L6-v2) on cpu
+2026-07-13 23:59:02,335 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-13 23:59:20,487 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-13 23:59:20,552 - INFO - RealEstateRAG - Running RAG pipeline for query: 'what is possession timeline'
+2026-07-13 23:59:20,756 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-13 23:59:20,756 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-13 23:59:20,756 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-13 23:59:20,756 - INFO - RealEstateRAG - Chunk 2 | sht_payment_plan.pdf | Page 1
+2026-07-13 23:59:20,757 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Skyline Horizon Towers must be made via cheque, demand draft, or bank transfer in favor of
+the designated project escrow account, in compliance 
+2026-07-13 23:59:20,757 - INFO - RealEstateRAG - Chunk 3 | unr_possession_guidelines.docx | Page 1
+2026-07-13 23:59:20,757 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-13 23:59:20,758 - INFO - RealEstateRAG - Chunk 4 | rera_general_information.md | Page 1
+2026-07-13 23:59:20,758 - INFO - RealEstateRAG - - Structural defects reported within 5 years of possession must be rectified by the promoter free of charge within 30 days of being notified.
+
+- Delayed possession entitles the buyer to either a refund with interest or continued possession of the unit with monthly interest compensation, at the buyer
+2026-07-13 23:59:20,759 - INFO - RealEstateRAG - Chunk 5 | hbp_possession_guidelines.docx | Page 1
+2026-07-13 23:59:20,759 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-13 23:59:20,759 - INFO - RealEstateRAG - Chunk 6 | mlv_possession_guidelines.docx | Page 1
+2026-07-13 23:59:20,759 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-13 23:59:20,759 - INFO - RealEstateRAG - Chunk 7 | skyline_customer_support.md | Page 1
+2026-07-13 23:59:20,761 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-13 23:59:20,761 - INFO - RealEstateRAG - Chunk 8 | sht_possession_guidelines.docx | Page 1
+2026-07-13 23:59:20,761 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-13 23:59:20,762 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-13 23:59:20,763 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-13 23:59:20,763 - INFO - RealEstateRAG - Chunk 10 | unh_possession_guidelines.docx | Page 1
+2026-07-13 23:59:20,764 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-13 23:59:20,764 - INFO - RealEstateRAG - Generating response from Groq LLM..
+2026-07-13 23:59:21,665 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 23:59:22,142 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 00:00:29,769 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 00:00:30,056 - INFO - RealEstateRAG - Running RAG pipeline for query: 'Tell me about Skyline Horizon Towers.'
+2026-07-14 00:00:30,061 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-14 00:00:31,134 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 00:00:31,220 - INFO - RealEstateRAG - Rephrased question: 'What is the possession timeline for Skyline Horizon Towers'
+2026-07-14 00:00:32,029 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-14 00:00:32,030 - INFO - RealEstateRAG - Chunk 1 | sht_possession_guidelines.docx | Page 1
+2026-07-14 00:00:32,031 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-14 00:00:32,036 - INFO - RealEstateRAG - Chunk 2 | sht_location_guide.md | Page 1
+2026-07-14 00:00:32,037 - INFO - RealEstateRAG - # Skyline Horizon Towers — Location & Connectivity Guide
+
+## Overview
+
+Skyline Horizon Towers is located in Whitefield, Bengaluru, an area known for its proximity to established residential neighborhoods, commercial hubs, and social infrastructure.
+
+## Connectivity
+
+- Well connected via arterial roa
+2026-07-14 00:00:32,038 - INFO - RealEstateRAG - Chunk 3 | sht_brochure.pdf | Page 1
+2026-07-14 00:00:32,038 - INFO - RealEstateRAG - Skyline Horizon Towers — Project Brochure
+Project Overview
+Skyline Horizon Towers is a Residential (2/3 BHK apartments) project developed by Skyline Horizon
+Developers, located in Whitefield, Bengaluru. The project spans 4 towers/blocks with a total of 480 units.
+Possession is scheduled for December
+2026-07-14 00:00:32,039 - INFO - RealEstateRAG - Chunk 4 | skyline_privacy_policy.html | Page 1
+2026-07-14 00:00:32,040 - INFO - RealEstateRAG - Skyline Horizon Developers — Privacy Policy
+Skyline Horizon Developers — Privacy Policy
+Information We Collect
+We collect personal information you provide directly, such as your name, phone number, email address, and address, when you enquire about a project, book a site visit, or register interest 
+2026-07-14 00:00:32,041 - INFO - RealEstateRAG - Chunk 5 | sht_home_loan_partners.md | Page 1
+2026-07-14 00:00:32,041 - INFO - RealEstateRAG - # Skyline Horizon Towers — Home Loan Partner Information
+
+## Approved Lenders
+
+Skyline Horizon Towers is pre-approved for home loan disbursement by several major nationalized and private banks as well as leading housing finance companies. The current list of approved lenders is maintained by the CRM
+2026-07-14 00:00:32,042 - INFO - RealEstateRAG - Chunk 6 | skyline_about.html | Page 1
+2026-07-14 00:00:32,042 - INFO - RealEstateRAG - About Skyline Horizon Developers
+About Skyline Horizon Developers
+Company Profile
+Founded in 1998 and headquartered in Bengaluru, Karnataka, Skyline Horizon Developers has grown into a recognized name in the region's real estate sector, with a portfolio spanning residential apartments, villas, and c
+2026-07-14 00:00:32,042 - INFO - RealEstateRAG - Chunk 7 | sht_sale_agreement_terms.docx | Page 1
+2026-07-14 00:00:32,043 - INFO - RealEstateRAG - Skyline Horizon Towers — Agreement for Sale: Key Terms
+
+Definitions
+
+"Allottee" means the person(s) to whom the unit is allotted, sold, or transferred by the Promoter, and includes their legal heirs and permitted assigns.
+
+"Promoter" means Skyline Horizon Developers, registered under the applicable 
+2026-07-14 00:00:32,046 - INFO - RealEstateRAG - Chunk 8 | skyline_customer_support.md | Page 1
+2026-07-14 00:00:32,048 - INFO - RealEstateRAG - # Skyline Horizon Developers — Customer Support Documentation
+
+## Support Channels
+
+- Phone support: available Monday-Saturday, 9:30 AM - 6:30 PM, for booking, payment, and general project queries.
+
+- Email support: for documentation requests, payment receipts, and post-possession service requests, 
+2026-07-14 00:00:32,049 - INFO - RealEstateRAG - Chunk 9 | sht_payment_plan.pdf | Page 1
+2026-07-14 00:00:32,056 - INFO - RealEstateRAG - Skyline Horizon Towers — Payment Plan
+Construction-Linked Payment Plan (CLP)
+10% of the total consideration value is payable at the time of booking.
+15% is payable on execution of the Agreement for Sale, within 30 days of booking.
+10% on completion of the foundation/plinth level.
+10% on completion o
+2026-07-14 00:00:32,062 - INFO - RealEstateRAG - Chunk 10 | propertybazaar_listing_hbp.html | Page 1
+2026-07-14 00:00:32,064 - INFO - RealEstateRAG - Horizon Business Park — Listing on PropertyBazaar
+Horizon Business Park — Listing on PropertyBazaar
+Listing Summary
+Horizon Business Park by Skyline Horizon Developers is listed on PropertyBazaar under Commercial (office spaces), located at Outer Ring Road, Bengaluru.
+Price range as listed: INR 1.2 
+2026-07-14 00:00:32,066 - INFO - RealEstateRAG - Generating response from Groq LLM..
+2026-07-14 00:00:32,433 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 00:00:39,908 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 00:00:44,423 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 00:00:44,524 - INFO - RealEstateRAG - Running RAG pipeline for query: 'What are its amenities?'
+2026-07-14 00:00:44,526 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-14 00:00:44,823 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 00:00:44,835 - INFO - RealEstateRAG - Rephrased question: 'What are the amenities of Skyline Horizon Towers?'
+2026-07-14 00:00:45,363 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-14 00:00:45,364 - INFO - RealEstateRAG - Chunk 1 | sht_brochure.pdf | Page 1
+2026-07-14 00:00:45,364 - INFO - RealEstateRAG - Skyline Horizon Towers — Project Brochure
+Project Overview
+Skyline Horizon Towers is a Residential (2/3 BHK apartments) project developed by Skyline Horizon
+Developers, located in Whitefield, Bengaluru. The project spans 4 towers/blocks with a total of 480 units.
+Possession is scheduled for December
+2026-07-14 00:00:45,365 - INFO - RealEstateRAG - Chunk 2 | sht_amenities_guide.md | Page 1
+2026-07-14 00:00:45,366 - INFO - RealEstateRAG - # Skyline Horizon Towers — Amenities Guide
+
+## Recreational Amenities
+
+- Clubhouse with indoor games room, gymnasium, and multipurpose banquet hall.
+
+- Swimming pool with a separate children's pool and deck seating area.
+
+- Landscaped gardens, jogging/walking track, and outdoor seating pockets.
+
+- D
+2026-07-14 00:00:45,366 - INFO - RealEstateRAG - Chunk 3 | skyline_privacy_policy.html | Page 1
+2026-07-14 00:00:45,366 - INFO - RealEstateRAG - Skyline Horizon Developers — Privacy Policy
+Skyline Horizon Developers — Privacy Policy
+Information We Collect
+We collect personal information you provide directly, such as your name, phone number, email address, and address, when you enquire about a project, book a site visit, or register interest 
+2026-07-14 00:00:45,367 - INFO - RealEstateRAG - Chunk 4 | sht_brochure.pdf | Page 1
+2026-07-14 00:00:45,367 - INFO - RealEstateRAG - Flooring: Vitrified tiles in living/dining/bedrooms, anti-skid tiles in bathrooms and balconies.
+Kitchen: Granite platform with stainless steel sink and provision for modular kitchen fittings.
+Electrical: Concealed copper wiring with MCB distribution board, and provision for AC points in all bedroom
+2026-07-14 00:00:45,368 - INFO - RealEstateRAG - Chunk 5 | sht_possession_guidelines.docx | Page 1
+2026-07-14 00:00:45,368 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-14 00:00:45,369 - INFO - RealEstateRAG - Chunk 6 | propertybazaar_listing_hbp.html | Page 1
+2026-07-14 00:00:45,370 - INFO - RealEstateRAG - Horizon Business Park — Listing on PropertyBazaar
+Horizon Business Park — Listing on PropertyBazaar
+Listing Summary
+Horizon Business Park by Skyline Horizon Developers is listed on PropertyBazaar under Commercial (office spaces), located at Outer Ring Road, Bengaluru.
+Price range as listed: INR 1.2 
+2026-07-14 00:00:45,370 - INFO - RealEstateRAG - Chunk 7 | sht_floor_plans.md | Page 1
+2026-07-14 00:00:45,371 - INFO - RealEstateRAG - # Skyline Horizon Towers — Floor Plan Descriptions
+
+## Unit Types
+
+Skyline Horizon Towers offers Residential (2/3 BHK apartments). Exact carpet area and configuration vary by tower and floor; the figures below are representative of the typical unit mix offered at launch.
+
+## Typical Configurations
+
+
+2026-07-14 00:00:45,373 - INFO - RealEstateRAG - Chunk 8 | sht_sale_agreement_terms.docx | Page 1
+2026-07-14 00:00:45,373 - INFO - RealEstateRAG - Skyline Horizon Towers — Agreement for Sale: Key Terms
+
+Definitions
+
+"Allottee" means the person(s) to whom the unit is allotted, sold, or transferred by the Promoter, and includes their legal heirs and permitted assigns.
+
+"Promoter" means Skyline Horizon Developers, registered under the applicable 
+2026-07-14 00:00:45,378 - INFO - RealEstateRAG - Chunk 9 | sht_location_guide.md | Page 1
+2026-07-14 00:00:45,380 - INFO - RealEstateRAG - # Skyline Horizon Towers — Location & Connectivity Guide
+
+## Overview
+
+Skyline Horizon Towers is located in Whitefield, Bengaluru, an area known for its proximity to established residential neighborhoods, commercial hubs, and social infrastructure.
+
+## Connectivity
+
+- Well connected via arterial roa
+2026-07-14 00:00:45,381 - INFO - RealEstateRAG - Chunk 10 | sht_home_loan_partners.md | Page 1
+2026-07-14 00:00:45,382 - INFO - RealEstateRAG - # Skyline Horizon Towers — Home Loan Partner Information
+
+## Approved Lenders
+
+Skyline Horizon Towers is pre-approved for home loan disbursement by several major nationalized and private banks as well as leading housing finance companies. The current list of approved lenders is maintained by the CRM
+2026-07-14 00:00:45,383 - INFO - RealEstateRAG - Generating response from Groq LLM..
+2026-07-14 00:00:46,024 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 00:00:47,743 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 00:01:03,806 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 00:01:03,975 - INFO - RealEstateRAG - Running RAG pipeline for query: 'What is the possession date?'
+2026-07-14 00:01:03,975 - INFO - RealEstateRAG - Condensing question using conversation history...
+2026-07-14 00:01:04,395 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 00:01:04,411 - INFO - RealEstateRAG - Rephrased question: 'What is the possession date of Skyline Horizon Towers?'
+2026-07-14 00:01:05,151 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-14 00:01:05,152 - INFO - RealEstateRAG - Chunk 1 | sht_possession_guidelines.docx | Page 1
+2026-07-14 00:01:05,153 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-14 00:01:05,155 - INFO - RealEstateRAG - Chunk 2 | sht_location_guide.md | Page 1
+2026-07-14 00:01:05,155 - INFO - RealEstateRAG - # Skyline Horizon Towers — Location & Connectivity Guide
+
+## Overview
+
+Skyline Horizon Towers is located in Whitefield, Bengaluru, an area known for its proximity to established residential neighborhoods, commercial hubs, and social infrastructure.
+
+## Connectivity
+
+- Well connected via arterial roa
+2026-07-14 00:01:05,159 - INFO - RealEstateRAG - Chunk 3 | propertybazaar_listing_sht.html | Page 1
+2026-07-14 00:01:05,165 - INFO - RealEstateRAG - Skyline Horizon Towers — Listing on PropertyBazaar
+Skyline Horizon Towers — Listing on PropertyBazaar
+Listing Summary
+Skyline Horizon Towers by Skyline Horizon Developers is listed on PropertyBazaar under Residential (2/3 BHK apartments), located at Whitefield, Bengaluru.
+Price range as listed: INR 
+2026-07-14 00:01:05,180 - INFO - RealEstateRAG - Chunk 4 | skyline_privacy_policy.html | Page 1
+2026-07-14 00:01:05,180 - INFO - RealEstateRAG - Skyline Horizon Developers — Privacy Policy
+Skyline Horizon Developers — Privacy Policy
+Information We Collect
+We collect personal information you provide directly, such as your name, phone number, email address, and address, when you enquire about a project, book a site visit, or register interest 
+2026-07-14 00:01:05,182 - INFO - RealEstateRAG - Chunk 5 | sht_home_loan_partners.md | Page 1
+2026-07-14 00:01:05,183 - INFO - RealEstateRAG - # Skyline Horizon Towers — Home Loan Partner Information
+
+## Approved Lenders
+
+Skyline Horizon Towers is pre-approved for home loan disbursement by several major nationalized and private banks as well as leading housing finance companies. The current list of approved lenders is maintained by the CRM
+2026-07-14 00:01:05,185 - INFO - RealEstateRAG - Chunk 6 | skyline_customer_support.md | Page 1
+2026-07-14 00:01:05,188 - INFO - RealEstateRAG - # Skyline Horizon Developers — Customer Support Documentation
+
+## Support Channels
+
+- Phone support: available Monday-Saturday, 9:30 AM - 6:30 PM, for booking, payment, and general project queries.
+
+- Email support: for documentation requests, payment receipts, and post-possession service requests, 
+2026-07-14 00:01:05,195 - INFO - RealEstateRAG - Chunk 7 | skyline_about.html | Page 1
+2026-07-14 00:01:05,203 - INFO - RealEstateRAG - About Skyline Horizon Developers
+About Skyline Horizon Developers
+Company Profile
+Founded in 1998 and headquartered in Bengaluru, Karnataka, Skyline Horizon Developers has grown into a recognized name in the region's real estate sector, with a portfolio spanning residential apartments, villas, and c
+2026-07-14 00:01:05,240 - INFO - RealEstateRAG - Chunk 8 | hbp_brochure.pdf | Page 1
+2026-07-14 00:01:05,246 - INFO - RealEstateRAG - Horizon Business Park — Project Brochure
+Project Overview
+Horizon Business Park is a Commercial (office spaces) project developed by Skyline Horizon Developers,
+located in Outer Ring Road, Bengaluru. The project spans 2 towers/blocks with a total of 120 units.
+Possession is scheduled for March 2028,
+2026-07-14 00:01:05,259 - INFO - RealEstateRAG - Chunk 9 | sht_registration_process.docx | Page 1
+2026-07-14 00:01:05,270 - INFO - RealEstateRAG - Skyline Horizon Towers — Registration Process Guide
+
+Documents Required
+
+PAN Card and Aadhaar Card (or valid government-issued photo ID) of all buyers.
+
+Passport-size photographs of all buyers and, where applicable, of the seller.
+
+Copy of the executed Agreement for Sale / Sale Deed.
+
+Proof of payme
+2026-07-14 00:01:05,282 - INFO - RealEstateRAG - Chunk 10 | sht_rera_summary.pdf | Page 1
+2026-07-14 00:01:05,299 - INFO - RealEstateRAG - Skyline Horizon Towers — RERA Registration Summary
+RERA Registration Details
+Project Name: Skyline Horizon Towers
+Promoter: Skyline Horizon Developers
+RERA Registration Number: PRM/KA/RERA/1251/446/PR/210324/006712
+Project Location: Whitefield, Bengaluru
+Total Units Registered: 480
+Proposed Date of 
+2026-07-14 00:01:05,310 - INFO - RealEstateRAG - Generating response from Groq LLM..
+2026-07-14 00:01:05,924 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 00:01:07,470 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 00:01:15,722 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 00:01:15,752 - INFO - RealEstateRAG - Conversation memory cleared.
+2026-07-14 00:01:16,690 - INFO - RealEstateRAG - Environment variables loaded from .env

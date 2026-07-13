@@ -1,5 +1,3 @@
-from langchain_google_genai import ChatGoogleGenerativeAI
-from utils.helpers import logger, get_gemini_api_key
 from langchain_groq import ChatGroq
 from utils.helpers import logger
 import os

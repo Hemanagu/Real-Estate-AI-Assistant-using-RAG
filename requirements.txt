@@ -4,11 +4,14 @@ langchain==0.3.26
 langchain-community==0.3.27
 langchain-qdrant==0.2.0
 langchain-groq==0.3.7
+langchain-huggingface
 
 qdrant-client==1.15.1
 
 sentence-transformers==5.0.0
 transformers==4.53.2
+
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.7.1+cpu
 
 python-dotenv==1.1.1
@@ -18,7 +21,3 @@ beautifulsoup4==4.13.4
 
 protobuf==5.29.5
 pydantic==2.11.7
-
-langchain-huggingface
-
---extra-index-url https://download.pytorch.org/whl/cpu

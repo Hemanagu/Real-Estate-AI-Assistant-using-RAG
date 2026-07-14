@@ -10,7 +10,7 @@ class RealEstateRetriever:
     def __init__(self, vector_store_manager: QdrantVectorStoreManager):
         self.manager = vector_store_manager
 
-    def retrieve(self, query: str, k: int = 10) -> List[Document]:
+    def retrieve(self, query: str, k: int = 6) -> List[Document]:
         """Retrieve documents using MMR search."""
 
         vector_store = self.manager.get_vector_store()
@@ -24,7 +24,7 @@ class RealEstateRetriever:
                 search_type="mmr",
                 search_kwargs={
                     "k": k,
-                    "fetch_k": 20,
+                    "fetch_k": 10,
                     "lambda_mult": 0.5
                 }
             )

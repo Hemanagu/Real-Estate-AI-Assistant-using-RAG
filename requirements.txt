@@ -9,7 +9,7 @@ qdrant-client==1.15.1
 
 sentence-transformers==5.0.0
 transformers==4.53.2
-torch
+torch==2.7.1+cpu
 
 python-dotenv==1.1.1
 pypdf==5.8.0
@@ -20,3 +20,5 @@ protobuf==5.29.5
 pydantic==2.11.7
 
 langchain-huggingface
+
+--extra-index-url https://download.pytorch.org/whl/cpu

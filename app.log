@@ -2356,3 +2356,144 @@ Buyers are entitled to a joint inspection of the unit with the builder's represe
 2026-07-14 01:12:00,711 - INFO - RealEstateRAG - Generating response from Groq...
 2026-07-14 01:12:01,656 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-07-14 01:12:02,127 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 11:25:35,047 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 11:25:52,344 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 11:25:52,499 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 11:25:52,749 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 11:26:03,723 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 11:26:40,456 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 11:26:40,456 - INFO - RealEstateRAG - Connecting to Qdrant at: ./qdrant_storage
+2026-07-14 11:26:40,613 - INFO - RealEstateRAG - Initializing Groq LLM...
+2026-07-14 11:26:45,395 - INFO - RealEstateRAG - Groq LLM initialized successfully.
+2026-07-14 11:26:45,473 - INFO - RealEstateRAG - Running RAG for: what is possession timeline
+2026-07-14 11:26:45,473 - INFO - RealEstateRAG - Loading embeddings...
+2026-07-14 11:26:45,473 - INFO - RealEstateRAG - Loading embedding model (sentence-transformers/all-MiniLM-L6-v2) on cpu
+2026-07-14 11:27:13,555 - INFO - sentence_transformers.SentenceTransformer - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-07-14 11:27:26,180 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-14 11:27:26,180 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-14 11:27:26,180 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-14 11:27:26,182 - INFO - RealEstateRAG - Chunk 2 | sht_payment_plan.pdf | Page 1
+2026-07-14 11:27:26,182 - INFO - RealEstateRAG - 95% of the total consideration is payable within 60 days of booking; the remaining 5% is payable at possession.
+Payment Terms & Conditions
+All payments for Skyline Horizon Towers must be made via cheque, demand draft, or bank transfer in favor of
+the designated project escrow account, in compliance 
+2026-07-14 11:27:26,182 - INFO - RealEstateRAG - Chunk 3 | unr_possession_guidelines.docx | Page 1
+2026-07-14 11:27:26,182 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-14 11:27:26,188 - INFO - RealEstateRAG - Chunk 4 | rera_general_information.md | Page 1
+2026-07-14 11:27:26,188 - INFO - RealEstateRAG - - Structural defects reported within 5 years of possession must be rectified by the promoter free of charge within 30 days of being notified.
+
+- Delayed possession entitles the buyer to either a refund with interest or continued possession of the unit with monthly interest compensation, at the buyer
+2026-07-14 11:27:26,188 - INFO - RealEstateRAG - Chunk 5 | hbp_possession_guidelines.docx | Page 1
+2026-07-14 11:27:26,190 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-14 11:27:26,190 - INFO - RealEstateRAG - Chunk 6 | mlv_possession_guidelines.docx | Page 1
+2026-07-14 11:27:26,190 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-14 11:27:26,190 - INFO - RealEstateRAG - Chunk 7 | skyline_customer_support.md | Page 1
+2026-07-14 11:27:26,190 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-14 11:27:26,190 - INFO - RealEstateRAG - Chunk 8 | sht_possession_guidelines.docx | Page 1
+2026-07-14 11:27:26,192 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-14 11:27:26,192 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-14 11:27:26,192 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-14 11:27:26,192 - INFO - RealEstateRAG - Chunk 10 | unh_possession_guidelines.docx | Page 1
+2026-07-14 11:27:26,192 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-14 11:27:26,192 - INFO - RealEstateRAG - Generating response from Groq...
+2026-07-14 11:27:27,098 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 11:27:27,962 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 11:27:59,690 - INFO - RealEstateRAG - Environment variables loaded from .env
+2026-07-14 11:28:00,233 - INFO - RealEstateRAG - Running RAG for: what is possession guideline
+2026-07-14 11:28:00,237 - INFO - RealEstateRAG - Condensing follow-up question...
+2026-07-14 11:28:00,894 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 11:28:00,926 - INFO - RealEstateRAG - Standalone question: What are the guidelines for possession timelines in real estate projects?
+2026-07-14 11:28:01,458 - INFO - RealEstateRAG - Retrieved 10 documents.
+2026-07-14 11:28:01,458 - INFO - RealEstateRAG - Chunk 1 | skyline_faq.html | Page 1
+2026-07-14 11:28:01,464 - INFO - RealEstateRAG - Possession & Documentation
+Q: When will I receive possession? A: Possession is offered as per the date declared in the project's RERA registration, subject to the grace period specified in the Agreement for Sale.
+Q: What documents will I receive at possession? A: You will receive the possession lett
+2026-07-14 11:28:01,464 - INFO - RealEstateRAG - Chunk 2 | rera_general_information.md | Page 1
+2026-07-14 11:28:01,464 - INFO - RealEstateRAG - # Understanding RERA — General Information for Homebuyers
+
+## What is RERA
+
+The Real Estate (Regulation and Development) Act, 2016 (RERA) is a central legislation aimed at protecting homebuyers and boosting investment in the real estate sector by mandating transparency and accountability from develo
+2026-07-14 11:28:01,466 - INFO - RealEstateRAG - Chunk 3 | unr_possession_guidelines.docx | Page 1
+2026-07-14 11:28:01,473 - INFO - RealEstateRAG - Urban Nest Riverside — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Urban Nest Riverside is August 2028, as declared in the RERA registration (Registration No. P01100005780). This date is subject to a grace period as specified in the Agreement for Sale, typically u
+2026-07-14 11:28:01,477 - INFO - RealEstateRAG - Chunk 4 | mlv_possession_guidelines.docx | Page 1
+2026-07-14 11:28:01,477 - INFO - RealEstateRAG - Meridian Lakeview Villas — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Lakeview Villas is September 2026, as declared in the RERA registration (Registration No. P52100034899). This date is subject to a grace period as specified in the Agreement for Sale, 
+2026-07-14 11:28:01,494 - INFO - RealEstateRAG - Chunk 5 | skyline_customer_support.md | Page 1
+2026-07-14 11:28:01,496 - INFO - RealEstateRAG - - Post-possession maintenance and snag/defect reporting.
+
+- Documentation requests: Allotment Letter copy, Agreement for Sale copy, RERA registration certificate copy.
+
+## Escalation Process
+
+If a query is not resolved by the initial support channel within the stated turnaround time, it may be escal
+2026-07-14 11:28:01,500 - INFO - RealEstateRAG - Chunk 6 | hbp_possession_guidelines.docx | Page 1
+2026-07-14 11:28:01,509 - INFO - RealEstateRAG - Horizon Business Park — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Horizon Business Park is March 2028, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006713). This date is subject to a grace period as specified in the Agree
+2026-07-14 11:28:01,512 - INFO - RealEstateRAG - Chunk 7 | rera_general_information.md | Page 1
+2026-07-14 11:28:01,514 - INFO - RealEstateRAG - - Structural defects reported within 5 years of possession must be rectified by the promoter free of charge within 30 days of being notified.
+
+- Delayed possession entitles the buyer to either a refund with interest or continued possession of the unit with monthly interest compensation, at the buyer
+2026-07-14 11:28:01,516 - INFO - RealEstateRAG - Chunk 8 | unh_possession_guidelines.docx | Page 1
+2026-07-14 11:28:01,525 - INFO - RealEstateRAG - Carry a valid photo ID and the original Agreement for Sale / Allotment Letter to the possession/handover appointment.
+
+Snag Inspection & Handover
+
+Buyers are entitled to a joint inspection of the unit with the builder's representative prior to formal handover, during which any visible defects, incom
+2026-07-14 11:28:01,527 - INFO - RealEstateRAG - Chunk 9 | mgr_possession_guidelines.docx | Page 1
+2026-07-14 11:28:01,527 - INFO - RealEstateRAG - Meridian Greens Residency — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Meridian Greens Residency is June 2027, as declared in the RERA registration (Registration No. P52100034521). This date is subject to a grace period as specified in the Agreement for Sale, typ
+2026-07-14 11:28:01,533 - INFO - RealEstateRAG - Chunk 10 | sht_possession_guidelines.docx | Page 1
+2026-07-14 11:28:01,539 - INFO - RealEstateRAG - Skyline Horizon Towers — Possession Guidelines
+
+Possession Timeline
+
+The proposed date of possession for Skyline Horizon Towers is December 2027, as declared in the RERA registration (Registration No. PRM/KA/RERA/1251/446/PR/210324/006712). This date is subject to a grace period as specified in the 
+2026-07-14 11:28:01,547 - INFO - RealEstateRAG - Generating response from Groq...
+2026-07-14 11:28:02,817 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 11:28:07,229 - INFO - RealEstateRAG - Environment variables loaded from .env
